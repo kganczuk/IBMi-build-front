@@ -1,4 +1,4 @@
-# hello-world
+# IBMi-build-front
 
 ## Project setup
 ```
