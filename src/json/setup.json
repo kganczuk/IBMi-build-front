@@ -1,0 +1,5492 @@
+{
+  "libraryList": ["BSDB", "BSOBJ", "BSDBSMKARC"],
+  "bindingDirectories": {
+    "extensions": {
+      ".BNDDIR": {
+        "command": "CRTBNDDIR"
+      }
+    },
+    "list": {
+      "TESSBNDDIR": {
+        "description": "TESS binding directory"
+      },
+      "BSBNDDIR": {
+        "description": "Bulk stocks binding library"
+      },
+      "BSBNDDIRED": {
+        "description": "EDFSS Integration - binding directory"
+      },
+      "IFSTEXT": {
+        "description": "IFS Text binding directory"
+      }
+    }
+  },
+  "physicalFiles":{
+    "extensions": {
+      ".PF": {
+        "command": "CRTPF"
+      }
+    },
+    "options": {
+      "sourceFile": "QPFSRC",
+      "extension": ".PF",
+      "type": "PF"
+    },
+    "list": {
+      "BSRBPW22":{
+        "description": "workfile for eec restitution price changes"
+      }
+    }
+  },
+  "printerFiles": {
+    "extensions": {
+      ".PRTF": {
+        "command": "CRTPRTF",
+        "parameters": {
+          "MAXRCDS": "*NOMAX"
+        }
+      }
+    },
+    "options": {
+      "sourceFile": "QPRTFSRC",
+      "extension": ".PRTF",
+      "type": "PRTF"
+    },
+    "list": {
+      "PRINTIWDD": {
+        "description": "Print IWDD printer file",
+        "parameters": {
+          "FOLD": "*YES",
+          "PAGESIZE": "72"
+        }
+      },
+      "BBLETTER": {
+        "description": null
+      },
+      "BCEG01PT": {
+        "description": "Process BARCODE, Load Data to BSS",
+        "parameters": {
+          "HOLD": "*YES"
+        }
+      },
+      "BCEG07PT": {
+        "description": "Process BARCODE, Print Pick List"
+      },
+      "BCEG15PT": {
+        "description": "Process BARCODE, Stock Check and Tier Confirm",
+        "parameters": {
+          "PAGESIZE": "55 80",
+          "OVRFLW": "55"
+        }
+      },
+      "BLHDPR09": {
+        "description": "Print file for all Bulk Stock reports."
+      },
+      "BSCBPR01": {
+        "description": "Printer file for Clyde Bond Bulk Stocks System"
+      },
+      "BSEGDP09": {
+        "description": "% of Tot.Stk held in all Loc/whse by Mak/yr report"
+      },
+      "BSEGPP13": {
+        "description": "Low Level Location Stock Report"
+      },
+      "BSEGPP15A": {
+        "description": "Print Sample Request(WIDTH 80, ROTN(0)"
+      },
+      "BSEGPP15B": {
+        "description": "Print Sample Labels(OVERFLOW 66, WIDTH 80, ROTN 0)"
+      },
+      "BSRBD61#": {
+        "description": "Bottling outturn error report"
+      },
+      "BSRBIWDD": {
+        "description": "Bulk stock Inter Warehouse Delivery Doc.print file"
+      },
+      "BSRBPC20B1": {
+        "description": "Sample Request"
+      },
+      "BSRBPC20B2": {
+        "description": "Sample Request Labels"
+      },
+      "BSRBPD25B1": {
+        "description": "Bottling Sample Request"
+      },
+      "EDLINVA4": {
+        "description": "Sales/Rents Invoices Print File"
+      },
+      "FNOTE": {
+        "description": "Print file for all Bulk Stock reports."
+      },
+      "FNOTE1": {
+        "description": "Print file for all Bulk Stock reports."
+      },
+      "FNOTE2": {
+        "description": "Print file for all Bulk Stock reports."
+      },
+      "LETTER": {
+        "description": "DELIVERY ORDER PRINTER FILE."
+      },
+      "LETTER1": {
+        "description": "DELIVERY ORDER PRINTER FILE."
+      },
+      "OFILECPY": {
+        "description": "Print file for all Bulk Stock reports."
+      },
+      "OFNOTICE": {
+        "description": "Order Forward Notice Postal Copy"
+      },
+      "OFRBBLRP": {
+        "description": "Print file for all Bulk Stock reports."
+      },
+      "OFRBBLYT": {
+        "description": "Print file for all Bulk Stock reports."
+      },
+      "REPORT": {
+        "description": "Print file for all Bulk Stock reports."
+      },
+      "REPORTOK": {
+        "description": "For Vat cal pgm"
+      },
+      "REPORTPL": {
+        "description": "Print file for all Bulk Stock reports."
+      },
+      "REPORT1": {
+        "description": "Print file for all Bulk Stock reports."
+      },
+      "REPORT11": {
+        "description": "For Vat cal pgm"
+      },
+      "REPORT2": {
+        "description": null
+      },
+      "REP198": {
+        "description": "Print file for Bulk Stock reports - 198 characters"
+      },
+      "REP250": {
+        "description": "Print file for use with wide reports."
+      },
+      "SCROLCB": {
+        "description": "printer file for CB bottling scrolls - 2 copies"
+      },
+      "SCROLL": {
+        "description": "Interim Scroll"
+      },
+      "SCROLLX2": {
+        "description": "printer file for cb blend scrolls"
+      },
+      "SCROLMA": {
+        "description": "printer file for MA bottling scrolls"
+      },
+      "SCROLRB": {
+        "description": "printer file for RB bottling scrolls"
+      },
+      "SCROLVA": {
+        "description": "printer file for RB bottling scrolls"
+      },
+      "SCROLXA": {
+        "description": "Bottling scrolls to Blends4050"
+      },
+      "SCROLXB": {
+        "description": "Bottling scrolls to GWR_SSCCU2"
+      },
+      "SCROLXC": {
+        "description": "Bottling scrolls to Dru3955"
+      },
+      "WARRANT": {
+        "description": "Macallan Warant"
+      }
+    }
+  },
+  "displayFiles": {
+    "extensions": {
+      ".DSPF": {
+        "command": "CRTDSPF",
+        "parameters": {
+          "RSTDSP": "*YES",
+          "DFRWRT": "*YES"
+        }
+      }
+    },
+    "options": {
+      "sourceFile": "QDSPFSRC",
+      "extension": ".DSPF",
+      "type": "DSPF"
+    },
+    "list": {
+      "ACTN01DS": {
+        "description": "Process BARCODE/NEWFILL, Main Menu"
+      },
+      "BCEG01DF": {
+        "description": "Process BARCODE, Load Data to BSS"
+      },
+      "BCEG02DSPF": {
+        "description": "Process BARCODE, Barcode Enquiry"
+      },
+      "BCEG03DF": {
+        "description": "Process BARCODE, User Site Pop-up"
+      },
+      "BCEG04DF": {
+        "description": "Process BARCODE, User Site Pop-up"
+      },
+      "BCEG05DF": {
+        "description": "Process BARCODE, Delivery Processing"
+      },
+      "BCEG08DF": {
+        "description": "Process BARCODE, Print IWDD"
+      },
+      "BCEG09DF": {
+        "description": "Process BARCODE, Goods Issue Pop-up"
+      },
+      "BCEG10DF": {
+        "description": "Process BARCODE, Confirm Receipt"
+      },
+      "BCEG11DF": {
+        "description": "Process BARCODE, Receipt Processing"
+      },
+      "BCEG13DF": {
+        "description": "Process BARCODE, Receipt Processing"
+      },
+      "BCEG15DF": {
+        "description": "Process BARCODE, Stock Check and Tier Confirm",
+        "parameters": {
+          "DFRWRT": "*NO"
+        }
+      },
+      "BCEG18DF": {
+        "description": "Process BARCODE, Stock Check and Tier Confirm"
+      },
+      "BCEG21DF": {
+        "description": "Process BARCODE, Location Pop-up"
+      },
+      "BCIFDA01": {
+        "description": "Bar Code Reconciliation Selection"
+      },
+      "BCIFDA15": {
+        "description": "Locate Casks in Storage              - LCKS"
+      },
+      "BCIFDA23": {
+        "description": "Download Load Planned Casks"
+      },
+      "BCIFDA27": {
+        "description": "Selective Bar Code Delete"
+      },
+      "BCIFDB05": {
+        "description": "Select Decanting Download Bar Code Data"
+      },
+      "BCIFDB06": {
+        "description": "barcode transfer pick records to gun"
+      },
+      "BC01DS": {
+        "description": "Process NEWFILL/BARCODE, Action Bar"
+      },
+      "BLHDSA10": {
+        "description": "Load Plan Prompt Display File"
+      },
+      "BSCBDA30": {
+        "description": "Blends Orders Picking List Selection Screen"
+      },
+      "BSCBDA35": {
+        "description": "CB - Add/Amend Cask Receipts"
+      },
+      "BSCBDA37": {
+        "description": "CB - Add/Amend Cask Despatches"
+      },
+      "BSCBDA47": {
+        "description": "Select WHSE & DATE -  Vat Loss Exceptions Report"
+      },
+      "BSCBDA49": {
+        "description": "Select WHSE/DATE/MARK- Vat Losses per Mark Report"
+      },
+      "BSCBDA54": {
+        "description": "Certify Vat Empty replacing BSCBDF54"
+      },
+      "BSCBDA57": {
+        "description": "B/S - Create Cask Load for N.B. Casks"
+      },
+      "BSCBDA60": {
+        "description": "Selection Screen for Print In-Situ Filling Locatns"
+      },
+      "BSCBDA65": {
+        "description": "Empty Wood Despatch Enquiry"
+      },
+      "BSCBDA66": {
+        "description": "Group Transport Report - Date Selection"
+      },
+      "BSCBDA71": {
+        "description": "Tanker Losses report - Selction screen"
+      },
+      "BSCBDF01": {
+        "description": "Add/amend Marks"
+      },
+      "BSCBDF02": {
+        "description": "Mark Descriptions enquiry"
+      },
+      "BSCBDF08": {
+        "description": "Type of Stock Acct / Operation maintenance"
+      },
+      "BSCBDF09": {
+        "description": "Type of Stock Account / Operation enquiry"
+      },
+      "BSCBDF10": {
+        "description": "Vat maintenance"
+      },
+      "BSCBDF11": {
+        "description": "Vat stock enquiry"
+      },
+      "BSCBDF12": {
+        "description": "Add/amend Vat Calibration"
+      },
+      "BSCBDF13": {
+        "description": "Vat Calibrations listing request"
+      },
+      "BSCBDF21": {
+        "description": "BSCB - Display for storage warehouse maintenance"
+      },
+      "BSCBDF22": {
+        "description": "Location maintenance display file"
+      },
+      "BSCBDF27": {
+        "description": "Cask Stock by Mark listing request"
+      },
+      "BSCBDF29": {
+        "description": "Cask Stock by Location listing request"
+      },
+      "BSCBDF31": {
+        "description": "Cask Stock by Stock A/c-Operation listing request"
+      },
+      "BSCBDF37": {
+        "description": "Stock account / Operation maintenance"
+      },
+      "BSCBDF40": {
+        "description": "Receipt of Casks for Operation       - RCST/RCOP"
+      },
+      "BSCBDF43": {
+        "description": "Dip Casks Display File               - DIPC"
+      },
+      "BSCBDF44": {
+        "description": "Cask filling                         - CKFL"
+      },
+      "BSCBDF45": {
+        "description": "Decant casks to Operation          - DCKO"
+      },
+      "BSCBDF46": {
+        "description": "Locate Casks in Storage              - LCKS"
+      },
+      "BSCBDF51": {
+        "description": "Receive Tanker/Transfer to Vat       - RTTV"
+      },
+      "BSCBDF52": {
+        "description": "Vat dip                              - VDIP"
+      },
+      "BSCBDF53": {
+        "description": "Vat transfer                         - VTTR"
+      },
+      "BSCBDF55": {
+        "description": "Undo CVTE"
+      },
+      "BSCBDF56": {
+        "description": "Tanker filling and removal           - TFIL"
+      },
+      "BSCBDF57": {
+        "description": "Notify completion of operation       - NCOP"
+      },
+      "BSCBDF60": {
+        "description": "Enquiry on Orders by Selected Mark"
+      },
+      "BSCBDF61": {
+        "description": "Order Enquiry - All Marks"
+      },
+      "BSCBDF62": {
+        "description": "Order Enquiry by Selected Company"
+      },
+      "BSCBDF64": {
+        "description": "Add to P.A Tables 1 & 2"
+      },
+      "BSCBDF65": {
+        "description": "Individual Cask enquiry"
+      },
+      "BSCBDF66": {
+        "description": "Cask stock by Mark enquiry"
+      },
+      "BSCBDF68": {
+        "description": "Cask Stock by Location enquiry"
+      },
+      "BSCBDF69": {
+        "description": "BSCB - Stock Acc/Operation enquiry display file"
+      },
+      "BSCBDF70": {
+        "description": "BSCB display for stk/opern transaction enquiry"
+      },
+      "BSCBDF71": {
+        "description": "BSCB Stock A/c Opern Enquiry - Cask Stk Display"
+      },
+      "BSCBDF72": {
+        "description": "BSCB Stock A/c Operation Enq Vat stocks display"
+      },
+      "BSCBDF73": {
+        "description": "BSCB - Stock A/c Operation Enq-Cased Goods Totals"
+      },
+      "BSCBDF74": {
+        "description": "Spirit type Enquiry"
+      },
+      "BSCBDF76": {
+        "description": "Storage Warehouse enquiry"
+      },
+      "BSCBDF77": {
+        "description": "Storage Locations enquiry"
+      },
+      "BSCBDF80": {
+        "description": "Order no. enquiry"
+      },
+      "BSCBDF83": {
+        "description": "Transaction listing request"
+      },
+      "BSCBDF85": {
+        "description": "Blend Scroll Enquiry Display                     w"
+      },
+      "BSCBDF91": {
+        "description": "Type of stock account Maint"
+      },
+      "BSCBDM01": {
+        "description": "Record returned receipt confirmations"
+      },
+      "BSCBDM52": {
+        "description": "Vat dip @ Macallan                - VDIP"
+      },
+      "BSCBDP06": {
+        "description": "Screen for outstanding rcpts & deliv. report."
+      },
+      "BSCBDQ02": {
+        "description": "Individual Cask Enquiry Screen                :SJM"
+      },
+      "BSCBDQ04": {
+        "description": "Individual Cask Enquiry Screen-Rotation History"
+      },
+      "BSCBDS03": {
+        "description": "Cask Origin Maintenance"
+      },
+      "BSCBDS04": {
+        "description": "Cask Origin Enquiry"
+      },
+      "BSCBDS05": {
+        "description": "Add/amend types of spirit"
+      },
+      "BSCBD02B": {
+        "description": "Cask Filled by Rotation"
+      },
+      "BSCBD03S": {
+        "description": "Casks Available Summary Report."
+      },
+      "BSCBD04S": {
+        "description": "Detailed cask filled report selection"
+      },
+      "BSCBD05B": {
+        "description": "Cask Filled by Rotation Enquiry"
+      },
+      "BSCBD05S": {
+        "description": "Cask filled summary report selection"
+      },
+      "BSCBD106": {
+        "description": "cask parcel enquiry"
+      },
+      "BSCBD108": {
+        "description": "NEGATIVE tanker reciept ADJUSTMENT   - ADTR"
+      },
+      "BSCBD109": {
+        "description": "Refill transaction(Cask/balance cask adjustment)"
+      },
+      "BSCBD127": {
+        "description": "Bulk Stock - Vat Loss Exceptions Control"
+      },
+      "BSCBD128": {
+        "description": "Bulk Stock - Vat Loss Exceptions Control"
+      },
+      "BSCBRD06": {
+        "description": "SELECT WHSE/DATE/MARK FOR VAT LOSS PATTERNS"
+      },
+      "BSCB04DF": {
+        "description": "Bottling Book Enquiry"
+      },
+      "BSEGDA04": {
+        "description": "Purch. prev. receipted stock - from a 3rd party."
+      },
+      "BSEGDA11": {
+        "description": "NBD location update by owner."
+      },
+      "BSEGDA13": {
+        "description": "Delete status 1 stock"
+      },
+      "BSEGDA20": {
+        "description": "Re-submit NES file production"
+      },
+      "BSEGDC22": {
+        "description": "On-line Allocation of Stock"
+      },
+      "BSEGDF01": {
+        "description": "Annual Uplift Prompt"
+      },
+      "BSEGDF02": {
+        "description": "Average Cost Update Prompt"
+      },
+      "BSEGDF08": {
+        "description": "Stock Held in all Locations/warehouses prompt scr"
+      },
+      "BSEGDF10": {
+        "description": "Stk.Hld in single w.house/w.house grp. prompt scrn"
+      },
+      "BSEGDF19": {
+        "description": "Vat Calibration  enquiry"
+      },
+      "BSEGDF20": {
+        "description": "Tier confirms and Stock checks enquiry"
+      },
+      "BSEGDF21": {
+        "description": "Delivery enquiry program"
+      },
+      "BSEGDF22": {
+        "description": "Operation sales pre-invoice price check sel.scr"
+      },
+      "BSEGDF23": {
+        "description": "Flowlog-Correct erroneous records"
+      },
+      "BSEGDF24": {
+        "description": "Bulk Stock - Accrual Date/Location Screen"
+      },
+      "BSEGDF25": {
+        "description": "completed SSN''s selection screen"
+      },
+      "BSEGDF27": {
+        "description": "Release locked rotations"
+      },
+      "BSEGDF51": {
+        "description": "Bottling loss report selection screen"
+      },
+      "BSEGDF54": {
+        "description": "Blending Operation Loss report selection screen"
+      },
+      "BSEGDF56": {
+        "description": "Replacements report selection screen"
+      },
+      "BSEGDF66": {
+        "description": "Update cask tint data."
+      },
+      "BSEGDM03": {
+        "description": "SAP financial table file maintenance"
+      },
+      "BSEGDM07": {
+        "description": "Customs reporting file maintenance"
+      },
+      "BSEGDM14": {
+        "description": "Customs reporting Rule file maintenance"
+      },
+      "BSEGDM15": {
+        "description": "Profit Centre Code file maintenance"
+      },
+      "BSEGDM17": {
+        "description": "Display file for BSEGRM17"
+      },
+      "BSEGDM18": {
+        "description": "Office of Exit Maintenance"
+      },
+      "BSEGDM19": {
+        "description": "Mode of transport maintenance"
+      },
+      "BSEGDM21": {
+        "description": "Country file maintenance"
+      },
+      "BSEGDP13": {
+        "description": "Common Low Level Location Stock Enquiry"
+      },
+      "BSEGDP14": {
+        "description": "Call Low Level Location Stock Enquiry"
+      },
+      "BSEGDP15": {
+        "description": "Print samples"
+      },
+      "BSEGDP30": {
+        "description": "Blend make-up and age reports display file."
+      },
+      "BSEGDP50": {
+        "description": "Unable to allocate object screen."
+      },
+      "BSEGDW43": {
+        "description": "TESS > TM1 allow maint of Load Plan I/F file"
+      },
+      "BSEGRD12": {
+        "description": "Adjust NB casks filled at NBD"
+      },
+      "BSHDDW01": {
+        "description": "Location Code Window"
+      },
+      "BSIFDF01": {
+        "description": "SAP > TESS production receipts update files"
+      },
+      "BSIFDF04": {
+        "description": "Process rejected production receipts"
+      },
+      "BSIFDF05": {
+        "description": "SAP to TESS disgorge interface control program"
+      },
+      "BSIFDF07": {
+        "description": "COGNOS to TESS blend allocations interface"
+      },
+      "BSIFDF09": {
+        "description": "Mass Deallocation selection screen"
+      },
+      "BSIFDF10": {
+        "description": "TM1 to TESS load plan interface selection screen"
+      },
+      "BSIFDF12": {
+        "description": "TESS > TM1 Load Plan Interface"
+      },
+      "BSRBDA02": {
+        "description": "Purchase stock - from a 3rd party."
+      },
+      "BSRBDA03": {
+        "description": "Exchange whisky."
+      },
+      "BSRBDA04": {
+        "description": "Cask movements."
+      },
+      "BSRBDA05": {
+        "description": "Racked casks."
+      },
+      "BSRBDA06": {
+        "description": "Lost casks."
+      },
+      "BSRBDA07": {
+        "description": "Reservation of stock."
+      },
+      "BSRBDA09": {
+        "description": "Selection screen for reserved stock report"
+      },
+      "BSRBDA10": {
+        "description": "IWDD - intention to despatch."
+      },
+      "BSRBDA11A": {
+        "description": "Letter of Authorisation(Intent to despatch)"
+      },
+      "BSRBDA13": {
+        "description": "Contract maintenance."
+      },
+      "BSRBDA14": {
+        "description": "Contract Closure."
+      },
+      "BSRBDA15": {
+        "description": "Contract enquiry."
+      },
+      "BSRBDA17": {
+        "description": "Selection for detail contract print."
+      },
+      "BSRBDA18": {
+        "description": "Purchase stock - group company."
+      },
+      "BSRBDA19": {
+        "description": "Contract Reactivation."
+      },
+      "BSRBDA26": {
+        "description": "Change I.W.D.D."
+      },
+      "BSRBDA28": {
+        "description": "Sale of stock."
+      },
+      "BSRBDA29": {
+        "description": "Bulk Stocks - Stock File Corrections"
+      },
+      "BSRBDA30": {
+        "description": "Bulk Litres Correction"
+      },
+      "BSRBDA31": {
+        "description": "Bulk Stock - Customer Stock Transfer"
+      },
+      "BSRBDA32": {
+        "description": "Litres of alcohol correction"
+      },
+      "BSRBDA33": {
+        "description": "Bulk Stocks - Delete Parcels"
+      },
+      "BSRBDA34": {
+        "description": "Bulk Stocks - Add Parcels"
+      },
+      "BSRBDA35": {
+        "description": "Comments maintenance"
+      },
+      "BSRBDA36": {
+        "description": "Enter parameters to produce EMCS file/fallback doc"
+      },
+      "BSRBDA37": {
+        "description": "Exchanges - amend 3rd party litres."
+      },
+      "BSRBDA39": {
+        "description": "Sale of stock (Selling at AYS date)."
+      },
+      "BSRBDA57": {
+        "description": "Reservation codes update"
+      },
+      "BSRBDA60": {
+        "description": "Purchase New Filled Whisky - NB Interface."
+      },
+      "BSRBDA62": {
+        "description": "Purchase whisky from 3rd parties from status 1 stk"
+      },
+      "BSRBDA70": {
+        "description": "Display file for blend & bottling avg age rpts."
+      },
+      "BSRBDA80": {
+        "description": "Quality Control Enquiry"
+      },
+      "BSRBDA85": {
+        "description": "Cask Quality Control Enquiry"
+      },
+      "BSRBDA92": {
+        "description": "stock transfer between Group Own with same SAP COY"
+      },
+      "BSRBDC01": {
+        "description": "Blending Programme Maintenance"
+      },
+      "BSRBDC02": {
+        "description": "blending programme review"
+      },
+      "BSRBDC03": {
+        "description": "Blending Schedule List Selection Date & Type"
+      },
+      "BSRBDC05": {
+        "description": "Blend Schedule Acceptance Screen"
+      },
+      "BSRBDC07": {
+        "description": "Stock Available Selection Criteria"
+      },
+      "BSRBDC08": {
+        "description": "Stock Master Enquiry"
+      },
+      "BSRBDC09": {
+        "description": "Stock Summary Enquiry"
+      },
+      "BSRBDC10": {
+        "description": "Stock Parcel Enquiry"
+      },
+      "BSRBDC11": {
+        "description": "Macallan quality update"
+      },
+      "BSRBDC11B": {
+        "description": "Macallan quality update for Parcel"
+      },
+      "BSRBDC16": {
+        "description": "Blending/Racking Programme Creation"
+      },
+      "BSRBDC17": {
+        "description": "Add I.V.D.''s to scroll"
+      },
+      "BSRBDC18": {
+        "description": "Allocate blend numbers to scrolls"
+      },
+      "BSRBDC20": {
+        "description": "Request Macallan sample requests and labels"
+      },
+      "BSRBDC21": {
+        "description": "Check Interim Scrolls DSPF"
+      },
+      "BSRBDC22": {
+        "description": "On-line Allocation of Stock"
+      },
+      "BSRBDC23": {
+        "description": "Quality parameter selection"
+      },
+      "BSRBDC24": {
+        "description": "Check Interim Scrolls against make-up enquiry"
+      },
+      "BSRBDC25": {
+        "description": "Check Interim Scrolls against make-up DSPF"
+      },
+      "BSRBDC27": {
+        "description": "Request Order Forward Documentation - Displays"
+      },
+      "BSRBDC28": {
+        "description": "Request Order Forward Bottling Documentation"
+      },
+      "BSRBDC37": {
+        "description": "Select option report"
+      },
+      "BSRBDC40": {
+        "description": "Replacements - deallocation"
+      },
+      "BSRBDC42": {
+        "description": "Replacements system - On line stock allocation dsp"
+      },
+      "BSRBDC43": {
+        "description": "Replacements enquiry."
+      },
+      "BSRBDC45": {
+        "description": "Macallan blend o/fwd rollback display file."
+      },
+      "BSRBDC57": {
+        "description": "Selection of order forward ratio report"
+      },
+      "BSRBDC59": {
+        "description": "Stock by Order no. Report Selection"
+      },
+      "BSRBDC71": {
+        "description": "Bottling marks which require samples maintenance."
+      },
+      "BSRBDC74": {
+        "description": "Stock Summary Enquiry"
+      },
+      "BSRBDC78": {
+        "description": "N.B Stock Master Enquiry"
+      },
+      "BSRBDC83": {
+        "description": "Order forward stopper program dsiplay file."
+      },
+      "BSRBDD01": {
+        "description": "setup operation"
+      },
+      "BSRBDD02": {
+        "description": "Operation maintenance"
+      },
+      "BSRBDD03": {
+        "description": "Request list of stock operations"
+      },
+      "BSRBDD10": {
+        "description": "Maintain purchase orders associated with scrolls."
+      },
+      "BSRBDD22": {
+        "description": "On-line Allocation for Operations"
+      },
+      "BSRBDD24": {
+        "description": "Operational scroll enquiry display file"
+      },
+      "BSRBDD25": {
+        "description": "Request Macallan sample requests and labels"
+      },
+      "BSRBDD27": {
+        "description": "Request Order Forward Bottling Documentation"
+      },
+      "BSRBDD87": {
+        "description": "Automatic bottling deallocation"
+      },
+      "BSRBDF03": {
+        "description": "Wood Summary Optional Selection"
+      },
+      "BSRBDF17": {
+        "description": "EEC restitution price changes"
+      },
+      "BSRBDF23": {
+        "description": "Stock Valuation Selection Screens"
+      },
+      "BSRBDI01": {
+        "description": "Review transactions for invoicing."
+      },
+      "BSRBDI03": {
+        "description": "Sales Invoicing - Review Invoices for Printing"
+      },
+      "BSRBDI05": {
+        "description": "Invoice History Enquiry (Non-Rent)"
+      },
+      "BSRBDI08": {
+        "description": "Review Printed/Processed Rent Invoices Screens"
+      },
+      "BSRBDI21": {
+        "description": "Group Rents Payable Display Screens"
+      },
+      "BSRBDI22": {
+        "description": "Processed Rent Invoices Screens"
+      },
+      "BSRBDI23": {
+        "description": "Process Rent Charges Screens"
+      },
+      "BSRBDI24": {
+        "description": "Process Rent Charges Screens"
+      },
+      "BSRBDI26": {
+        "description": "Annual Rents Payable Acceptance"
+      },
+      "BSRBDI28": {
+        "description": "Bulk Stock - Removal Rent Outstanding Date Sel."
+      },
+      "BSRBDI32": {
+        "description": "Bulk Stock - Accrual Date/Location Screen"
+      },
+      "BSRBDI43": {
+        "description": "Accept North British Rent invoices"
+      },
+      "BSRBDI44": {
+        "description": "Process Rent Charges Screens"
+      },
+      "BSRBDI49": {
+        "description": "Rent Rates Comparison Report."
+      },
+      "BSRBDI53": {
+        "description": "Enter Weekend date for Operational Sales Invoices"
+      },
+      "BSRBDJ01": {
+        "description": "Bulk Stock - Accrual Date/Location Screen"
+      },
+      "BSRBDJ30": {
+        "description": "Enter Reconciliation Report Parameters."
+      },
+      "BSRBDMA8": {
+        "description": "PURCH INTERFACE TO SAP  ANALYSIS CODES MNT"
+      },
+      "BSRBDMD3": {
+        "description": "NBD Stock movements"
+      },
+      "BSRBDME5": {
+        "description": "maintain Excise warehousekeepers address details"
+      },
+      "BSRBDMU2": {
+        "description": "SAP nominal link codes maintenance"
+      },
+      "BSRBDMU6": {
+        "description": "Maintain Originator override"
+      },
+      "BSRBDMV1": {
+        "description": "Hand written scroll comments maintenance"
+      },
+      "BSRBDM05": {
+        "description": "Financial Blend Group Maintenance"
+      },
+      "BSRBDM07": {
+        "description": "BS: Location sort code maintenance screens."
+      },
+      "BSRBDM12": {
+        "description": "Change order blend programme from one month to anr"
+      },
+      "BSRBDM17": {
+        "description": "Delete NBD new fillings"
+      },
+      "BSRBDM28": {
+        "description": "BS: N.B Location Translation Maintenance."
+      },
+      "BSRBDM41": {
+        "description": "Operational sales - agreed prices maintenance."
+      },
+      "BSRBDM44": {
+        "description": "Group sales - agreed prices maintenance."
+      },
+      "BSRBDM47": {
+        "description": "Location rental rates maintenance"
+      },
+      "BSRBDM48": {
+        "description": "Carrier maintenance."
+      },
+      "BSRBDM51": {
+        "description": "Shipment schedule maintenance."
+      },
+      "BSRBDM52": {
+        "description": "Blend make-up/ingredients maintenance."
+      },
+      "BSRBDM53": {
+        "description": "Contract type maintenance."
+      },
+      "BSRBDM54": {
+        "description": "Whisky type maintenance."
+      },
+      "BSRBDM55": {
+        "description": "Distillery group maintenance."
+      },
+      "BSRBDM56": {
+        "description": "Distillery maintenance."
+      },
+      "BSRBDM57": {
+        "description": "Cask (wood) type maintenance."
+      },
+      "BSRBDM58": {
+        "description": "Cask size maintenance."
+      },
+      "BSRBDM59": {
+        "description": "Owner maintenance."
+      },
+      "BSRBDM60": {
+        "description": "Account maintenance."
+      },
+      "BSRBDM61": {
+        "description": "Ledger interface codes maintenance."
+      },
+      "BSRBDM62": {
+        "description": "New filling price code maintenance."
+      },
+      "BSRBDM63": {
+        "description": "Reservation maintenance."
+      },
+      "BSRBDM66": {
+        "description": "Invoice terms maintenance."
+      },
+      "BSRBDM67": {
+        "description": "Location maintenance."
+      },
+      "BSRBDM68": {
+        "description": "Loss Tolerance Maintenance"
+      },
+      "BSRBDM69": {
+        "description": "Blending warehouse maintenance."
+      },
+      "BSRBDM71": {
+        "description": "Transport Maintenance"
+      },
+      "BSRBDM72": {
+        "description": "Tariff trade code no. maintenance."
+      },
+      "BSRBDM73": {
+        "description": "Calendar period-end date maintenance."
+      },
+      "BSRBDM76": {
+        "description": "Vat type maintenance."
+      },
+      "BSRBDM80": {
+        "description": "Prices for valuation of stock maintenance."
+      },
+      "BSRBDM81": {
+        "description": "Prices for new filling sales maintenance."
+      },
+      "BSRBDM93": {
+        "description": "Constants maintenance."
+      },
+      "BSRBDM94": {
+        "description": "Reconciliation headings maintenance"
+      },
+      "BSRBDM95": {
+        "description": "Transaction types per recon. heading maintenance."
+      },
+      "BSRBDM96": {
+        "description": "WBCL Error Message Maintenance"
+      },
+      "BSRBDM97": {
+        "description": "Transaction types maintenance."
+      },
+      "BSRBDM99": {
+        "description": "Display file for blend owner maintenance"
+      },
+      "BSRBDN01": {
+        "description": "Stock Enquiry"
+      },
+      "BSRBDN05": {
+        "description": "Financial Blend Group Enquiry"
+      },
+      "BSRBDN07": {
+        "description": "BS: Location sort code enquiry"
+      },
+      "BSRBDN12": {
+        "description": "Transaction History for Scroll"
+      },
+      "BSRBDN15": {
+        "description": "Transaction History for Scroll"
+      },
+      "BSRBDN28": {
+        "description": "BS: N.B Location Translation enquiry."
+      },
+      "BSRBDN31": {
+        "description": "Transaction History Enquiry Screens"
+      },
+      "BSRBDN33": {
+        "description": "History Trans - New Fill, Contra-Fill & Recost Enq"
+      },
+      "BSRBDN34": {
+        "description": "Transaction History by Shipment Schedule"
+      },
+      "BSRBDN38": {
+        "description": "Stock Transaction History - IWDD Enquiry"
+      },
+      "BSRBDN41": {
+        "description": "Operational sales - price enquiries"
+      },
+      "BSRBDN44": {
+        "description": "Group sales price enquiries."
+      },
+      "BSRBDN46": {
+        "description": "Carrying cost charges enquiry."
+      },
+      "BSRBDN47": {
+        "description": "Location rental rates enquiry."
+      },
+      "BSRBDN48": {
+        "description": "Carrier enquiry."
+      },
+      "BSRBDN52": {
+        "description": "Ship schedule/blend make-up enquiry"
+      },
+      "BSRBDN53": {
+        "description": "Contract type enquiry."
+      },
+      "BSRBDN54": {
+        "description": "Whisky type enquiry."
+      },
+      "BSRBDN55": {
+        "description": "Distillery group enquiry."
+      },
+      "BSRBDN56": {
+        "description": "Distillery enquiry."
+      },
+      "BSRBDN57": {
+        "description": "Cask (wood) type enquiry."
+      },
+      "BSRBDN58": {
+        "description": "Cask size enquiry."
+      },
+      "BSRBDN59": {
+        "description": "Owner enquiry."
+      },
+      "BSRBDN60": {
+        "description": "Account enquiry."
+      },
+      "BSRBDN61": {
+        "description": "Ledger interface codes enquiry."
+      },
+      "BSRBDN62": {
+        "description": "New filling price codes enquiry."
+      },
+      "BSRBDN63": {
+        "description": "Reservation enquiry."
+      },
+      "BSRBDN64": {
+        "description": "Market enquiry."
+      },
+      "BSRBDN66": {
+        "description": "Invoice terms enquiry"
+      },
+      "BSRBDN67": {
+        "description": "Location enquiry."
+      },
+      "BSRBDN69": {
+        "description": "Blending warehouse enquiry."
+      },
+      "BSRBDN71": {
+        "description": "Transport enquiry."
+      },
+      "BSRBDN72": {
+        "description": "Tariff trade code no. enquiry."
+      },
+      "BSRBDN75": {
+        "description": "Free Format Comments enquiry."
+      },
+      "BSRBDN76": {
+        "description": "Vat type enquiry."
+      },
+      "BSRBDN80": {
+        "description": "Prices for valuation of stock enquiry."
+      },
+      "BSRBDN81": {
+        "description": "Prices for new filling sales enquiry."
+      },
+      "BSRBDN91": {
+        "description": "Bulk stock next available number enquiry"
+      },
+      "BSRBDN93": {
+        "description": "Constants enquiry."
+      },
+      "BSRBDO51": {
+        "description": "Shipment schedule/blend make-up print selection."
+      },
+      "BSRBDP02": {
+        "description": "Stocktaking Date Selection"
+      },
+      "BSRBDP08": {
+        "description": "Stock specification on request selection screen"
+      },
+      "BSRBDP25": {
+        "description": "Invoice History Dates input"
+      },
+      "BSRBDP37": {
+        "description": "Invoice History Data input"
+      },
+      "BSRBDP41": {
+        "description": "Operational sales print selection."
+      },
+      "BSRBDP44": {
+        "description": "Group sales prices."
+      },
+      "BSRBDP48": {
+        "description": "Carrier/Rates report Display File"
+      },
+      "BSRBDP67": {
+        "description": "Locations/subsites print selection."
+      },
+      "BSRBDP73": {
+        "description": "Calendar Print/Enquiry Selection."
+      },
+      "BSRBDP81": {
+        "description": "Prices for new filling sales print selection."
+      },
+      "BSRBDP95": {
+        "description": "Transaction types print selection."
+      },
+      "BSRBDQ01": {
+        "description": "Audit Trail - Transaction History"
+      },
+      "BSRBDQ31": {
+        "description": "Select Stock Print"
+      },
+      "BSRBDQ51": {
+        "description": "HD Management reports selection"
+      },
+      "BSRBDQ69": {
+        "description": "selection screen for blend and bottling losses rpt"
+      },
+      "BSRBDQ70": {
+        "description": "selection screen for blend and bottling losses rpt"
+      },
+      "BSRBDQ82": {
+        "description": "Prompt for list of stock per customer account code"
+      },
+      "BSRBDQ92": {
+        "description": "Cask Analysis Report Selection Screen"
+      },
+      "BSRBDQ96": {
+        "description": "Bulk Stock - Sale of Stock Date Selection Screen"
+      },
+      "BSRBDQ98": {
+        "description": "Bulk Stock - Sale of Stock Date Selection Screen"
+      },
+      "BSRBDW33": {
+        "description": "Alternative blend mark maintenance"
+      },
+      "BSRBDX51": {
+        "description": "Amend grouping of Blend Marks"
+      },
+      "BSRBDX56": {
+        "description": "Amend grouping of distillery codes"
+      },
+      "BSRBDY11": {
+        "description": "Bulk Stock Invoicing/Rents Selection Menu"
+      },
+      "BSRBDY31": {
+        "description": "Transaction History Enquiry Menu"
+      },
+      "BSRBD38A": {
+        "description": "Selection Screen for RF38"
+      },
+      "BSRBD47A": {
+        "description": "Location rental rates maintenance - 2nd file."
+      },
+      "BSRBD47B": {
+        "description": "Location rental rates maintenance - 3rd file."
+      },
+      "BSRBD69B": {
+        "description": "selection screen for blend cost report"
+      },
+      "BSRBD80B": {
+        "description": "Bottling costs report display file."
+      },
+      "BSRBD89A": {
+        "description": "Bulk Stock - Cost of Sale"
+      },
+      "BSUI01DS": {
+        "description": "Process NEWFILL/BARCODE, Dispaly User Interface"
+      },
+      "BSUNLKDF": {
+        "description": "Release locked rotations display"
+      },
+      "BSVMDM01": {
+        "description": "Warehouse Map file maintenance DSPF."
+      },
+      "BSVMDM02": {
+        "description": "Whse. Vacuity Blocking Code/Descr. Maint. DSPF"
+      },
+      "BSVMDM04": {
+        "description": "Vacuity report & blocked tiers report screen.    R"
+      },
+      "CGCBDA15A": {
+        "description": "Stock report location - selection"
+      },
+      "CO_LOC_DS": {
+        "description": "Change   Company & Location   in the LDA"
+      },
+      "CRCBDF26": {
+        "description": "select whse and date for bottling loss report"
+      },
+      "ERLOGGERDF": {
+        "description": "Process NEWFILL/BARCODE, Dispaly User Interface"
+      },
+      "GTGPDE01": {
+        "description": "Display file for load plan enquiry"
+      },
+      "GTGPDE13": {
+        "description": "load plan enquiry main dspf"
+      },
+      "GTGPDF01": {
+        "description": "R&B transport centre maintain arrival dates"
+      },
+      "GTGPDF02": {
+        "description": "Group transport constants maintenece"
+      },
+      "GTGPDF11": {
+        "description": "R&B transport centre maintain arrival dates"
+      },
+      "GTGPDF12": {
+        "description": "Load Plan/Delivery/Stock enquiry"
+      },
+      "GTGPDF13": {
+        "description": "ED transport centre Manual Load Plan"
+      },
+      "GTGPDF16": {
+        "description": "Move loads across years/months"
+      },
+      "GTRBDF01": {
+        "description": "Group transport letters of authorisation"
+      },
+      "GTRBDF02": {
+        "description": "Enter Ad-hoc details into Load Plan"
+      },
+      "GTRBDF04": {
+        "description": "GTC Transport invoice payment"
+      },
+      "GTRBDF05": {
+        "description": "GTC Transport invoice payment"
+      },
+      "GTRBDN03": {
+        "description": "Group Transport - Monthly Freight Report."
+      },
+      "MSG01DS": {
+        "description": "Process BARCODE/NEWFILL, Error Log"
+      },
+      "NFEG01DF": {
+        "description": "Process BARCODE/NEWFILL, Display Message"
+      },
+      "NFEG02DF": {
+        "description": "Process NEWFILL, Load Data Procedures"
+      },
+      "NFEG05DF": {
+        "description": "Process NEWFILL, Data Log Enquiry",
+        "parameters": {
+          "WAITRCD": "1"
+        }
+      },
+      "NFEG07DF": {
+        "description": "Process NEWFILL, Process Filling Data",
+        "parameters": {
+          "WAITRCD": "1"
+        }
+      },
+      "NFEG08DF": {
+        "description": "Process NEWFILL, Downdate NMS"
+      },
+      "NF01DS": {
+        "description": "Process NEWFILL, Transport Code Pop-up"
+      },
+      "PMPT001D": {
+        "description": "Prompt - Location Code"
+      },
+      "PMPT002D": {
+        "description": "Prompt - Cask Org/Yr/Rtn/First Cask"
+      },
+      "PMPT003D": {
+        "description": "Prompt - Indication/Temperature"
+      },
+      "PMPT004D": {
+        "description": "Prompt - Strength/Temperature"
+      },
+      "PMPT006D": {
+        "description": "Prompt - Dip Value"
+      },
+      "PMPT007D": {
+        "description": "Prompt for account codes"
+      },
+      "PROCMSG": {
+        "description": "Process BARCODE, Load Data to BSS, Processing MSG",
+        "parameters": {
+          "WAITRCD": "1"
+        }
+      },
+      "RAJAN": {
+        "description": "Tier confirms and Stock checks enquiry"
+      }
+    }
+  },
+  "modules": {
+    "extensions": {
+      ".SQLRPGLE": {
+        "command": "CRTSQLRPGI",
+        "parameters": {
+          "OBJTYPE": "*MODULE"
+        }
+      },
+      ".RPGLE": {
+        "command": "CRTSQLRPGI",
+        "parameters": {
+          "OBJTYPE": "*MODULE"
+        }
+      }
+    },
+    "list": {
+    }
+  },
+  "servicePrograms": {
+    "extensions": {
+      ".RPGLE": {
+        "command": "CRTSQLRPGI",
+        "parameters": {
+          "OBJTYPE": "*SRVPGM",
+          "COMMIT": "*NONE",
+          "DBGVIEW": "*SOURCE",
+          "COMPILEOPT": "'BNDDIR(BSBNDDIR) OPTION(*SRCSTMT) ALWNULL(*YES)'"
+        }
+      },
+      ".SQLRPGLE": {
+        "command": "CRTSQLRPGI",
+        "parameters": {
+          "OBJTYPE": "*SRVPGM",
+          "COMMIT": "*NONE",
+          "DBGVIEW": "*SOURCE"
+        }
+      }
+    },
+    "list": {
+      "ARRAYLIST": {
+        "description": "Array List *SRVPGM",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "TESSSRVCS": {
+        "description": "Process BARCODE/NEWFILL, General use in BARCODE",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "ERLDATA": {
+        "description": "Process BARCODE/NEWFILL, Error Log Data",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "ERLOGGER": {
+        "description": "Process BARCODE/NEWFILL, Error Log",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "TRANSDATA": {
+        "description": "Process BARCODE, Returns data for delivery list",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "ORDERDATA": {
+        "description": "Process BARCODE/NEWFILL, Order Data",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "DLDATA": {
+        "description": "Process BARCODE/NEWFILL, Deliveries Data",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "CSKDATA": {
+        "description": "Process NEWFILL/BARCODE, Cask Operations",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "CUSTDATA": {
+        "description": "Process NEWFILL/BARCODE, Customer Data Operations",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "SCDATA": {
+        "description": "Process BARCODE, User Sites",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "CASKLOC": {
+        "description": "Process NEWFILL/BARCODE, Cask Location Operations",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "BCEG04": {
+        "description": "Process BARCODE, User Site Pop-up",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "BCEG11": {
+        "description": "Process BARCODE, Receipt Processing",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "NFEG08": {
+        "description": "Process NEWFILL, Transport Code Pop-up",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "BCEG21": {
+        "description": "Process BARCODE, Location Pop-up",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "BCEG08": {
+        "description": "Process BARCODE, Print IWDD",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "BCEG09": {
+        "description": "Process BARCODE, Goods Issue Pop-up",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "BCEG10": {
+        "description": "Process BARCODE, Confirm Receipt",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "MARTUSIA": {
+        "description": "Kocham Martusie :)",
+        "parameters": {
+          "Jak?": "Bardzo mocno",
+          "Buzi?": "Tak"
+        }
+      },
+      "SENDTOGUN": {
+        "description": "Process BARCODE, Send to gun",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "BCTRDATA": {
+        "description": "Process BARCODE, Send BSS Data",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "NFTRDATA": {
+        "description": "Process NEWFILL, Transfer data for NewFill",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "NBD01": {
+        "description": "Process BARCODE/NEWFILL, General Purpose",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "NFEG06": {
+        "description": "Process NEWFILL, Process Filling Data - Subfile",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "LOGDATA": {
+        "description": "Process NEWFILL, Data Log",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "NBG01": {
+        "description": "Process BARCODE/NEWFILL, General Purpose",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "BSWSRS01": {
+        "description": "Expose BSCBPF01 to requestor SRV PGM",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "BSWSRS02": {
+        "description": "Expose CGCBPF09 as a web service INTEGRA",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "BSWSRS03": {
+        "description": "fgfgfgf",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "BSWSRS04": {
+        "description": "Service pgm for vat stock",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "BSWSRS06": {
+        "description": "Expose BSRBPF31 as a web service",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "BSWSRS09": {
+        "description": "EDFSS integration - service program",
+        "bindingDirectory": "BSBNDDIRED",
+        "parameters": {
+          "COMMIT": "*NONE"
+        }
+      },
+      "SQLHANDLER": {
+        "description": "Program to handle SQL errors",
+        "bindingDirectory": "TESSBNDDIR",
+        "parameters": {
+          "COMMIT": "*NONE"
+        }
+      },
+      "XVERRH": {
+        "description": "Standard Error Handler",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "XVLDYN": {
+        "description": "Dynamically Load a Service Program",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      },
+      "XVRSLV": {
+        "description": "Resolve to object",
+        "parameters": {
+          "COMMIT": "*CHG"
+        }
+      }, 
+      "IFSTEXTR4": {
+        "description": "Process NEWFILL, Data Log",
+        "bindingDirectory": "IFSTEXT"
+      }
+    }
+  },
+  "programs": {
+    "extensions": {
+      ".RPGLE": {
+        "command": "CRTSQLRPGI",
+        "parameters": {
+          "COMMIT": "*NONE",
+          "DBGVIEW": "*SOURCE",
+          "COMPILEOPT": "'DFTACTGRP(*NO) ACTGRP(QILE) BNDDIR(BSBNDDIR) OPTION(*SRCSTMT) ALWNULL(*YES)'"
+        }
+      },
+      ".SQLRPGLE": {
+        "command": "CRTSQLRPGI",
+        "parameters": {
+          "COMMIT": "*NONE",
+          "DBGVIEW": "*SOURCE"
+        }
+      },
+      ".CLLE": {
+        "command": "CRTBNDCL",
+        "parameters": {
+          "DFTACTGRP": "*YES",
+          "DBGVIEW": "*ALL"
+        }
+      }
+    },
+    "list": {
+      "ACTN01": {
+        "description": "Process BARCODE/NEWFILL, Prompt for Action"
+      },
+      "BCEGDF01_1": {
+        "description": "Data cleanse program for BCEGDF01"
+      },
+      "BCEGEF01_1": {
+        "description": "Data cleanse for BCEGEF01 Lansa File"
+      },
+      "BCEGPF01_1": {
+        "description": "Archive records from BCEGPF01 LANSA file"
+      },
+      "BCEGPF02_1": {
+        "description": "Archive records from BCEGPF02 LANSA table"
+      },
+      "BCEGRJ03": {
+        "description": "Pass Lansa Exchange List -> BSEGRJ03 parameters"
+      },
+      "BCEG02": {
+        "description": "Process BARCODE, Barcode Enquiry"
+      },
+      "BCEG05": {
+        "description": "Process BARCODE, Delivery Processing"
+      },
+      "BCEG07": {
+        "description": "Process BARCODE, Print Pick List"
+      },
+      "BCEG13": {
+        "description": "Process BARCODE, Receipt Processing"
+      },
+      "BCEG15BCH": {
+        "description": "Process BARCODE, Stock Check and Tier Confirm"
+      },
+      "BCEG15SC": {
+        "description": "Process BARCODE, Stock Check"
+      },
+      "BCEG15TC": {
+        "description": "Process BARCODE, Tier Confirm"
+      },
+      "BCELCF01": {
+        "description": "Pass Lansa Exchange List -> BSRBRF01 parameters"
+      },
+      "BCELCJ01": {
+        "description": "Pass Lansa exchange list -> BSEGRJ01 parameters"
+      },
+      "BCELCJ04": {
+        "description": "Pass Lansa exchange list -> BSEGRJ04 parameters"
+      },
+      "BCELCP01": {
+        "description": "Pass Lansa exchange list -> BSEGRP01 parameters"
+      },
+      "BCELCP16": {
+        "description": "Pass Lansa exchange list -> BSEGRP16 parameters"
+      },
+      "BCELCP45": {
+        "description": "Pass Lansa exchange list -> BSCBRP45 parameters"
+      },
+      "BCELCP56": {
+        "description": "Pass Lansa exchange list -> BSCBRP56 parameters"
+      },
+      "BCEXRA17N": {
+        "description": "Pass Lansa Exchange List -> BCIFRA17 parameters"
+      },
+      "BCEXRJ01": {
+        "description": "Pass Lansa exchange list -> BSEGRJ01 parameters"
+      },
+      "BCEXRJ02": {
+        "description": "Pass Lansa exchange list -> BSEGRJ02 parameters"
+      },
+      "BCIFCA07": {
+        "description": "Barcode Delete"
+      },
+      "BCIFCA12": {
+        "description": "Bar code create delivery records for the guns"
+      },
+      "BCIFCA12B": {
+        "description": "bar code run batch transfer pgm -send dels to gun"
+      },
+      "BCIFCA12C": {
+        "description": "Bar Code Clear the delivery file"
+      },
+      "BCIFCA13": {
+        "description": "Bar code create receipt records for the guns"
+      },
+      "BCIFCA13B": {
+        "description": "Bar Code do the batch file transfer for receipts"
+      },
+      "BCIFCA13C": {
+        "description": "Bar Code Clear the receipts file"
+      },
+      "BCIFCA15": {
+        "description": "Locate casks in storage  -  LCKS#"
+      },
+      "BCIFCA16": {
+        "description": "Locate casks from Stock Check by Comp/Locn/Whse"
+      },
+      "BCIFCA18": {
+        "description": "Reset STKCHK Data Area to disallow Locate updates"
+      },
+      "BCIFDECN": {
+        "description": "Transfer Decantings to PC (Recomp for LIVE)"
+      },
+      "BCIFFPLN": {
+        "description": "Transfer Load Plans to PC (Recomp for LIVE)"
+      },
+      "BCIFPCHK": {
+        "description": "barcode transfer pick records to gun"
+      },
+      "BCIFRA01": {
+        "description": "Select Bar Code Reconciliation parms"
+      },
+      "BCIFRA02": {
+        "description": "Bar Code Reconciliation Print"
+      },
+      "BCIFRA02A": {
+        "description": "Bar Code Reconciliation Print Locate Casks STKCHK"
+      },
+      "BCIFRA07": {
+        "description": "Delete Stock Check Barcode Records"
+      },
+      "BCIFRA08": {
+        "description": "Cask location Report"
+      },
+      "BCIFRA10": {
+        "description": "Extract Cask Position Details"
+      },
+      "BCIFRA12": {
+        "description": "Write records to barcode deliveries interface file"
+      },
+      "BCIFRA13": {
+        "description": "Write records to barcode receipts interface file"
+      },
+      "BCIFRA15": {
+        "description": "Locate casks in storage - LCKS"
+      },
+      "BCIFRA17": {
+        "description": "Split Parcel of Casks (new)"
+      },
+      "BCIFRA19": {
+        "description": "Retrieve Barcode Records from Work File"
+      },
+      "BCIFRA23": {
+        "description": "Create download info. for selected load plans"
+      },
+      "BCIFRA27": {
+        "description": "Delete Selective Barcode Records"
+      },
+      "BCIFRA29": {
+        "description": "Retrieve Barcode Records from Work File"
+      },
+      "BCIFRA95": {
+        "description": "Bar Code Location Contents Report"
+      },
+      "BCIFRB05": {
+        "description": "select Decantings for Download"
+      },
+      "BCIFRB06": {
+        "description": "barcode transfer pick records to gun"
+      },
+      "BCIFT400": {
+        "description": "Transfer Barcode Data to AS400 (Recmp for LIVE)"
+      },
+      "BCSSCA01": {
+        "description": "Barcode Snap-Shot Reconcilliation Print"
+      },
+      "BCSSCA02": {
+        "description": "Barcode Reconcilliation Selection"
+      },
+      "BCSSCA09": {
+        "description": "Create Snap-Shot Data"
+      },
+      "BCSSCA10": {
+        "description": "Create Snap-Shot Data"
+      },
+      "BCSSRA96": {
+        "description": "Cask Snap-shot Position Set-up"
+      },
+      "BLHDRA10": {
+        "description": "Create Deliveries from Load Plan"
+      },
+      "BMCBPF09_1": {
+        "description": "BMCBPF09 Archive records."
+      },
+      "BSCALLQ02E": {
+        "description": "Overnight job call query ovrprtf to save yes"
+      },
+      "BSCBCA03": {
+        "description": "SUBMIT VAT LOSS PATTERNS REPORT"
+      },
+      "BSCBCA04": {
+        "description": "Submit to batch,report in BSCBCA05"
+      },
+      "BSCBCA05": {
+        "description": "Report of Exceptions CVTE/VDIP from Std Dev"
+      },
+      "BSCBCA06": {
+        "description": "Submit to batch,report in BSCBCA07"
+      },
+      "BSCBCA07": {
+        "description": "Report of Vat Losses per mark per vat"
+      },
+      "BSCBCA10": {
+        "description": "Bulk Stocks Picking List - Submit"
+      },
+      "BSCBCA17": {
+        "description": "Tanker Filling and Removal - TFIL Print Desp Adv."
+      },
+      "BSCBCA18": {
+        "description": "Submit BSCBCA19 - Print In-Situ Filling Locations"
+      },
+      "BSCBCA23": {
+        "description": "Submit Group Transport Report"
+      },
+      "BSCBCA70": {
+        "description": "Submit Insurance Report"
+      },
+      "BSCBCA71": {
+        "description": "Insurance report ovrprtf and call RPG"
+      },
+      "BSCBCA98": {
+        "description": "Date reversal / validation"
+      },
+      "BSCBCL06B": {
+        "description": "CL pgm for confirmation dates of docs returned rpt"
+      },
+      "BSCBCL23": {
+        "description": "Cask Stock by Mark report - job submission"
+      },
+      "BSCBCL24": {
+        "description": "Cask Stock by Location report - job submission"
+      },
+      "BSCBCL25": {
+        "description": "Cask Stock by Stk.acc/Operation report - job subm."
+      },
+      "BSCBCL40": {
+        "description": "Submit P.A. Table 1 Listing"
+      },
+      "BSCBCL41": {
+        "description": "Submit P.A. Table 2 Listing"
+      },
+      "BSCBCL45": {
+        "description": "Transaction listing - CPYF & job submission"
+      },
+      "BSCBCL46": {
+        "description": "Print Audit transactions"
+      },
+      "BSCBCL58": {
+        "description": "Update Blends Samp DB Input files from BSOBJ files"
+      },
+      "BSCBCL67": {
+        "description": "Submit - Flowlog updates"
+      },
+      "BSCBCL68": {
+        "description": "Call Bscbrp67(create files) BSCBRP78(update CKFL)"
+      },
+      "BSCBCP40": {
+        "description": "Pass Lansa Exchange List -> BSCBRP40 parameters"
+      },
+      "BSCBCP55": {
+        "description": "Undo CVTE"
+      },
+      "BSCBCP57": {
+        "description": "Produce e-mail from NCOP"
+      },
+      "BSCBCP69MA": {
+        "description": "MAC Rotation Enquiry - call BSCBRP69 for MAMA"
+      },
+      "BSCBC01B": {
+        "description": "Submit Cask Filled by Rotation Report"
+      },
+      "BSCBPF01_1": {
+        "description": "BSCBPF01 Data Cleanse program"
+      },
+      "BSCBPF04_1": {
+        "description": "BSCBPF04 Archive records"
+      },
+      "BSCBPF09_1": {
+        "description": "Cleanse records from BSCBPF09 vat calibration"
+      },
+      "BSCBPF15_1": {
+        "description": "Data cleanse BSCBPF15 for non group locs"
+      },
+      "BSCBPF21_1": {
+        "description": "BSCBPF21 Archive Recs"
+      },
+      "BSCBPF42_1": {
+        "description": "Data Cleanse for BSCBPF42"
+      },
+      "BSCBPF43_1": {
+        "description": "Data Cleanse BSCBPF43 wood despatches header"
+      },
+      "BSCBPF44_1": {
+        "description": "Data Cleanse for BSCBPF44"
+      },
+      "BSCBPF52_1": {
+        "description": "BSCBPF52 Archive Records"
+      },
+      "BSCBRA21": {
+        "description": "VAT STOCKS REPORT -"
+      },
+      "BSCBRA26": {
+        "description": "VAT LOSS PATTERNS DATE/MARK SELECTION SCREEN"
+      },
+      "BSCBRA27": {
+        "description": "Vat Loss Patterns Report"
+      },
+      "BSCBRA30": {
+        "description": "BULK STOCKS Picking List Selection Screen"
+      },
+      "BSCBRA31": {
+        "description": "Bulk Stocks - Picking List"
+      },
+      "BSCBRA35": {
+        "description": "CB - Add/Amend Cask Receipts"
+      },
+      "BSCBRA37": {
+        "description": "CB - Add/Amend Cask Despatches"
+      },
+      "BSCBRA47": {
+        "description": "Monthly Exception Rpt - Date Entry"
+      },
+      "BSCBRA48": {
+        "description": "Monthly Exception Rpt VDIP/CVTE frm Std Dev."
+      },
+      "BSCBRA49": {
+        "description": "Report of Vat Losses per Mark - Date Entry"
+      },
+      "BSCBRA50": {
+        "description": "Report of Vat Losses Per Mark,From/To Dates"
+      },
+      "BSCBRA60": {
+        "description": "BULK STOCKS - In Situ Filling Sheet selection scrn"
+      },
+      "BSCBRA63": {
+        "description": "Create St Dev Workfile"
+      },
+      "BSCBRA65": {
+        "description": "Empty Wood Despatches Enquiry"
+      },
+      "BSCBRA66": {
+        "description": "Group Transport Report - Screen for Date entry"
+      },
+      "BSCBRA70": {
+        "description": "Insurance Report"
+      },
+      "BSCBRA71": {
+        "description": "Tanker Losses report - Selection screen"
+      },
+      "BSCBRA72": {
+        "description": "Tanker Losses Report program"
+      },
+      "BSCBRM01": {
+        "description": "Record returned receipt confirmations"
+      },
+      "BSCBRP01": {
+        "description": "BSCB - Add/Amend Marks"
+      },
+      "BSCBRP02": {
+        "description": "BSCB - Mark descriptions enquiry"
+      },
+      "BSCBRP03": {
+        "description": "BSCB - Add/amend Cask Origins"
+      },
+      "BSCBRP04": {
+        "description": "Cask Origins - Enquiry"
+      },
+      "BSCBRP05": {
+        "description": "add/amend types of spirit"
+      },
+      "BSCBRP06A": {
+        "description": "Scrn hdlg pgm for outstanding rcpts & deliv reprt"
+      },
+      "BSCBRP06B": {
+        "description": "Conf. dates of docs returned for receipts report."
+      },
+      "BSCBRP08": {
+        "description": "Type of Stock Account / Operation maintenance"
+      },
+      "BSCBRP09": {
+        "description": "Type of Stock Account / Operation enquiry"
+      },
+      "BSCBRP10": {
+        "description": "Vat maintenance"
+      },
+      "BSCBRP106": {
+        "description": "Cask parcel enquiry"
+      },
+      "BSCBRP108": {
+        "description": "Tanker Receipt Adjustment - ADTR"
+      },
+      "BSCBRP109": {
+        "description": "Decant casks for refilling (csk/bal cask adj) RFIL"
+      },
+      "BSCBRP11": {
+        "description": "Vat Stock Enquiry - if SQL removed change RP11"
+      },
+      "BSCBRP11A": {
+        "description": "Vat Stock Enquiry"
+      },
+      "BSCBRP12": {
+        "description": "BSCB - Add/amend Vat Calibrations"
+      },
+      "BSCBRP127": {
+        "description": "Bulk Stocks - Vat Loss Exceptions Control"
+      },
+      "BSCBRP128": {
+        "description": "Bulk Stocks - Vat Loss Exceptions Enquiry/Update"
+      },
+      "BSCBRP21": {
+        "description": "BSCB - Storage Warehouse Maintenance"
+      },
+      "BSCBRP22": {
+        "description": "Location File Maintenance"
+      },
+      "BSCBRP27": {
+        "description": "Cask Stock by Mark listing request"
+      },
+      "BSCBRP28": {
+        "description": "Cask Stock by Mark report"
+      },
+      "BSCBRP29": {
+        "description": "Cask Stock by Location listing request"
+      },
+      "BSCBRP30": {
+        "description": "Cask Stock by Location report"
+      },
+      "BSCBRP31": {
+        "description": "Cask Stock by Stock a/c-Operation listing request"
+      },
+      "BSCBRP32": {
+        "description": "Cask Stock by Stock acct/Operation report"
+      },
+      "BSCBRP35": {
+        "description": "List Practical Alcohol Table 1"
+      },
+      "BSCBRP36": {
+        "description": "List Practical Alcohol Table 2"
+      },
+      "BSCBRP37": {
+        "description": "Add/amend rotations - Multiple Rotn/blends"
+      },
+      "BSCBRP40": {
+        "description": "Receipt of casks for operation/stock (RCOP/RCST)"
+      },
+      "BSCBRP43": {
+        "description": "Dip Cask DIPC"
+      },
+      "BSCBRP44": {
+        "description": "Cask Filling CKFL"
+      },
+      "BSCBRP45": {
+        "description": "Decant casks(or Tankers) to operation DCKO & TDCO"
+      },
+      "BSCBRP45BC": {
+        "description": "Barcode versions of BSCBRP45CL - no STRCMTCTRL"
+      },
+      "BSCBRP45CL": {
+        "description": "call decant casks to opern BSCBRP45"
+      },
+      "BSCBRP46": {
+        "description": "Locate casks in storage LCKS"
+      },
+      "BSCBRP46CL": {
+        "description": "call BSCBRP46"
+      },
+      "BSCBRP51": {
+        "description": "Receive tanker and transfer to vat (RTTV)"
+      },
+      "BSCBRP52": {
+        "description": "Vat Dip                              VDIP"
+      },
+      "BSCBRP52M": {
+        "description": "Vat Dip & MACALLAN VDIP"
+      },
+      "BSCBRP53": {
+        "description": "Vat Transfer  (VTTR1 & VTTR2)"
+      },
+      "BSCBRP53CB": {
+        "description": "call BSCBRP53 allowing bulk litres"
+      },
+      "BSCBRP53CL": {
+        "description": "call BSCBRP53  vat dip figure only"
+      },
+      "BSCBRP54": {
+        "description": "Certify Vat empty (CVTE )"
+      },
+      "BSCBRP54CL": {
+        "description": "call BSCBRP54  Certify vat empty  CVTE"
+      },
+      "BSCBRP55": {
+        "description": "Undo CVTE CVTU transaction to undo CVTE"
+      },
+      "BSCBRP56": {
+        "description": "Tanker Filling and removal TFIL"
+      },
+      "BSCBRP57": {
+        "description": "Notify completion of Operation       NCOP"
+      },
+      "BSCBRP57CL": {
+        "description": "call notify vat completion BSCBRP57"
+      },
+      "BSCBRP60": {
+        "description": "Enquiry on Orders by Selected Mark"
+      },
+      "BSCBRP61": {
+        "description": "Enquiry on Orders - All Marks so"
+      },
+      "BSCBRP62": {
+        "description": "Enquiry on Orders by Selected Company"
+      },
+      "BSCBRP64": {
+        "description": "Add Entries to P.A. Tables 1 & 2"
+      },
+      "BSCBRP65": {
+        "description": "Individual Cask enquiry"
+      },
+      "BSCBRP66": {
+        "description": "Cask stock by mark enquiry"
+      },
+      "BSCBRP67": {
+        "description": "Flowlog - Create Header & Detail Files for CKFL"
+      },
+      "BSCBRP68": {
+        "description": "Cask Stock by Location Enquiry"
+      },
+      "BSCBRP69": {
+        "description": "BSCB - Stock Account/Operation Enquiry"
+      },
+      "BSCBRP70": {
+        "description": "BSCB - Stock A/c Operation Enq - View Transactions"
+      },
+      "BSCBRP71": {
+        "description": "BSCB Stock A/c Operation Enq - View Cask Stocks"
+      },
+      "BSCBRP72": {
+        "description": "BSCB Stock A/c Operation Enq - View vat stocks"
+      },
+      "BSCBRP73": {
+        "description": "BSCB - Stock A/c Operation Enq-Cased Goods Totals"
+      },
+      "BSCBRP74": {
+        "description": "Enquiry on Spirit type"
+      },
+      "BSCBRP76": {
+        "description": "Storage warehouses within LOCATION enquiry"
+      },
+      "BSCBRP77": {
+        "description": "Storage warehouse locations enquiry"
+      },
+      "BSCBRP78": {
+        "description": "Flowlog - Cask Filling CKFL"
+      },
+      "BSCBRP80": {
+        "description": "order no. Enquiry for Ops"
+      },
+      "BSCBRP83": {
+        "description": "Transaction listing request"
+      },
+      "BSCBRP84": {
+        "description": "Transaction listing"
+      },
+      "BSCBRP85": {
+        "description": "Blend Scroll Enquiry"
+      },
+      "BSCBRP88": {
+        "description": "Completed Operations report (automatic)"
+      },
+      "BSCBRP91": {
+        "description": "Amend type of Stock accounts"
+      },
+      "BSCBRP92": {
+        "description": "Return date (before or after) from parms"
+      },
+      "BSCBRP97": {
+        "description": "Update Last Stock account used at start of Year"
+      },
+      "BSCBR01B": {
+        "description": "Cask Filled by Rotation Report"
+      },
+      "BSCBR02B": {
+        "description": "Cask Filled by Rotation - Selection Screen"
+      },
+      "BSCBR03B": {
+        "description": "In Situ Cask Filled by Rotation Report"
+      },
+      "BSCBR04B": {
+        "description": "Bottling Book Enquiry"
+      },
+      "BSCBR05B": {
+        "description": "Cask Filled by Rotation Enquiry"
+      },
+      "BSEGCA01": {
+        "description": "NBD location update."
+      },
+      "BSEGCA13": {
+        "description": "delete sts 1 stock"
+      },
+      "BSEGCA20": {
+        "description": "Call BSEGRA20 re-submit NES file"
+      },
+      "BSEGCA21": {
+        "description": "Call BSEGRA21 NES file production program"
+      },
+      "BSEGCA52": {
+        "description": "Bottling Loss report submit batch job RP52"
+      },
+      "BSEGCA52A": {
+        "description": "Bottling loss call RP52 and create stream file"
+      },
+      "BSEGCA52B": {
+        "description": "Weekly automatic load of Bottling losses for BI"
+      },
+      "BSEGCA55": {
+        "description": "Blending loss report submit batch job 55A"
+      },
+      "BSEGCA55A": {
+        "description": "Blending loss submit job to batch"
+      },
+      "BSEGCA57": {
+        "description": "Submit Replacements report  CA57A"
+      },
+      "BSEGCA57A": {
+        "description": "Replacements report BSEGRP57"
+      },
+      "BSEGCI10": {
+        "description": "call RI10 Create COS and other journals to SAP FI"
+      },
+      "BSEGCI54AL": {
+        "description": "call RI54 Create COS and notional for cv All"
+      },
+      "BSEGCL01": {
+        "description": "Control Interface to SAP finance"
+      },
+      "BSEGCL03": {
+        "description": "Control operational whisky interface from cased gd"
+      },
+      "BSEGCL08": {
+        "description": "check for year change and update last stock ac no."
+      },
+      "BSEGCL10": {
+        "description": "Submit BW sampling download / singles file"
+      },
+      "BSEGCL11": {
+        "description": "BW download singles create streamfile"
+      },
+      "BSEGCL15": {
+        "description": "Sample request controlling program"
+      },
+      "BSEGCL30": {
+        "description": "Submit blend report to batch."
+      },
+      "BSEGCL30A": {
+        "description": "Send message saying job submitted to jobq."
+      },
+      "BSEGCL31": {
+        "description": "Wrapper program for Query"
+      },
+      "BSEGCU01": {
+        "description": "Annual Uplift Control Program"
+      },
+      "BSEGCU02": {
+        "description": "Average Costs Update Control Program"
+      },
+      "BSEGCU11": {
+        "description": "Annual Uplift Control Program Batch"
+      },
+      "BSEGCU21": {
+        "description": "Average Cost Control Program Batch"
+      },
+      "BSEGCZ56": {
+        "description": "Run RZ56 overnight job & clear down work file."
+      },
+      "BSEGC22A": {
+        "description": "CALCULATE AVERAGE TINT."
+      },
+      "BSEGC22B": {
+        "description": "Drill down for cask details from stock allocation"
+      },
+      "BSEGPF01_1": {
+        "description": "BSEGPF01 Archive Recs"
+      },
+      "BSEGPF06_1": {
+        "description": "Archive records from BSEGPF06"
+      },
+      "BSEGPF15_1": {
+        "description": "Archive records on BSEGPF15"
+      },
+      "BSEGP01": {
+        "description": "Annual Uplift Prompt Program"
+      },
+      "BSEGP02": {
+        "description": "Average Uplift Prompt Program"
+      },
+      "BSEGRA01": {
+        "description": "common routine to calculate loa"
+      },
+      "BSEGRA02": {
+        "description": "formatting casks"
+      },
+      "BSEGRA04": {
+        "description": "Purch whisky from a third party - Already in stock"
+      },
+      "BSEGRA11": {
+        "description": "Build work file for NBD location update."
+      },
+      "BSEGRA11A": {
+        "description": "Delete NBD locn update file recs not required"
+      },
+      "BSEGRA11B": {
+        "description": "Update stock parcels file records."
+      },
+      "BSEGRA11C": {
+        "description": "NBD location update screen handling program."
+      },
+      "BSEGRA11D": {
+        "description": "North British Stock recon change ED to CV"
+      },
+      "BSEGRA12": {
+        "description": "Fix status for casks filled for HD at NBD"
+      },
+      "BSEGRA13": {
+        "description": "Delete Status 1 stock"
+      },
+      "BSEGRA20": {
+        "description": "Re-submit NES file production"
+      },
+      "BSEGRA21": {
+        "description": "Produce NES file"
+      },
+      "BSEGRA28": {
+        "description": "Sale of stock black box version."
+      },
+      "BSEGRD01": {
+        "description": "Macallan Sampling Requirement program"
+      },
+      "BSEGRI10": {
+        "description": "Create SAP interface journals from transactions"
+      },
+      "BSEGRI54": {
+        "description": "Create Journals for EDL whisky used in production"
+      },
+      "BSEGRJ01": {
+        "description": "Update Stock Control file from Transaction History"
+      },
+      "BSEGRJ01N": {
+        "description": "Update Stock Control file from Txn without commit"
+      },
+      "BSEGRJ02": {
+        "description": "Update Stk. libality control from Trans. History"
+      },
+      "BSEGRJ02N": {
+        "description": "Update Stk. libality control WITHOUT COMMITMENT CT"
+      },
+      "BSEGRJ03": {
+        "description": "Update group and customer stock status for new stk"
+      },
+      "BSEGRJ04": {
+        "description": "Update Stock Control file ex Transaction Hist V2"
+      },
+      "BSEGRM03": {
+        "description": "SAP financial table file maintenance"
+      },
+      "BSEGRM07": {
+        "description": "customs reporting file maintenance"
+      },
+      "BSEGRM14": {
+        "description": "customs reporting Rule file maintenance"
+      },
+      "BSEGRM15": {
+        "description": "Profit Centre Code file maintenance"
+      },
+      "BSEGRM17": {
+        "description": "Bottling op loss validation"
+      },
+      "BSEGRM18": {
+        "description": "Office of exit maintenance"
+      },
+      "BSEGRM19": {
+        "description": "Mode of transport maintenance"
+      },
+      "BSEGRM21": {
+        "description": "Maintain Country file"
+      },
+      "BSEGRP01": {
+        "description": "Receive tanker and transfer to operation(RTMR)"
+      },
+      "BSEGRP08": {
+        "description": "Prompt parameters to submit Maca Cask Dispersal 1"
+      },
+      "BSEGRP13": {
+        "description": "Common Low Level Location Enquiry"
+      },
+      "BSEGRP14": {
+        "description": "Call Low Level Location Enquiry"
+      },
+      "BSEGRP15": {
+        "description": "Sample request Program"
+      },
+      "BSEGRP16": {
+        "description": "Tanker Dip Black Box TDIP for BSEG08/W8 prt T stk"
+      },
+      "BSEGRP19": {
+        "description": "Vat Calibration enquiry"
+      },
+      "BSEGRP20": {
+        "description": "Enquiry for Tier confirms and Stock checks"
+      },
+      "BSEGRP21": {
+        "description": "Delivery Enquiry program"
+      },
+      "BSEGRP22": {
+        "description": "Operation sales price check report"
+      },
+      "BSEGRP23": {
+        "description": "Flowlog-Correct erroneous records & rerun CKFL pgm"
+      },
+      "BSEGRP23CL": {
+        "description": "Flow-log erroneous correction CL wrapper program"
+      },
+      "BSEGRP24": {
+        "description": "Display message for Reconciliation submission"
+      },
+      "BSEGRP25": {
+        "description": "Shipment schedule with transaction number"
+      },
+      "BSEGRP26": {
+        "description": "Shipment schedule with transaction number"
+      },
+      "BSEGRP27": {
+        "description": "Release Locked rotations out"
+      },
+      "BSEGRP28": {
+        "description": "error report unable to allocate obj order forward"
+      },
+      "BSEGRP30": {
+        "description": "Blend make-up and age report."
+      },
+      "BSEGRP30A": {
+        "description": "Display file handling for blend & bottling repts."
+      },
+      "BSEGRP50": {
+        "description": "Unable to allocate object screen."
+      },
+      "BSEGRP51": {
+        "description": "Bottling loss report selection screen"
+      },
+      "BSEGRP52": {
+        "description": "Text Bottling loss report create report and file"
+      },
+      "BSEGRP53": {
+        "description": "Retrieve dates for auto load of Bottling losses>BI"
+      },
+      "BSEGRP54": {
+        "description": "Blending Loss report selection screen"
+      },
+      "BSEGRP55": {
+        "description": "Blending loss report create report and file"
+      },
+      "BSEGRP56": {
+        "description": "Replacements report selection screen"
+      },
+      "BSEGRP57": {
+        "description": "Replacements report"
+      },
+      "BSEGRP66": {
+        "description": "Update cask tint data."
+      },
+      "BSEGRW43": {
+        "description": "TESS > TM1 allow maint of Load Plan I/F file"
+      },
+      "BSEGU01": {
+        "description": "Annual Uplift Batch Update"
+      },
+      "BSEGU02": {
+        "description": "Average Costs Uplift Batch Update"
+      },
+      "BSELHF03_1": {
+        "description": "Data cleanse for BSELHF03 NF Interface History"
+      },
+      "BSELHF04_1": {
+        "description": "Data cleanse for BSELHF04 NF Interface History"
+      },
+      "BSELHF05_1": {
+        "description": "Data cleanse for BSELHF05 NF Interface History"
+      },
+      "BSELHF06_1": {
+        "description": "Data cleanse for BSELHF06 NF Interface History"
+      },
+      "BSELPF03_1": {
+        "description": "Archive records in BSELPF03 LANSA table"
+      },
+      "BSELPF06_1": {
+        "description": "Archive records from BSELPF06"
+      },
+      "BSGPPF02_1": {
+        "description": "BSGPPF02 Archiving Records"
+      },
+      "BSGPPF12_1": {
+        "description": "BSGPPF12 Archive Recs"
+      },
+      "BSGPPF16_1": {
+        "description": "Archive records BSGPPF16  GAALLY < 2017"
+      },
+      "BSHDRW01": {
+        "description": "HD Owned Location Codes Window"
+      },
+      "BSIFCL01": {
+        "description": " Detect if interface has to end"
+      },
+      "BSIFCL03": {
+        "description": "STRCMTTL and call BSIFRP02 Production SAP - TESS"
+      },
+      "BSIFCL04": {
+        "description": "Start the SAP to TESS interfaces"
+      },
+      "BSIFCL05": {
+        "description": "Production receipt consolidate production SAP-TESS"
+      },
+      "BSIFCL06": {
+        "description": "Production Consolidation SAP - TESS call RPG"
+      },
+      "BSIFCL08": {
+        "description": "Convert date to Julian used for validation"
+      },
+      "BSIFCL09": {
+        "description": "End TESS interfaces with SAP WM send E to dataq\"s"
+      },
+      "BSIFCL12": {
+        "description": "Clear the TESS > TM1 Load plan Interface files"
+      },
+      "BSIFRP01": {
+        "description": "SAP > TESS production receipts update files"
+      },
+      "BSIFRP02": {
+        "description": "SAP > TESS production receipt trigger program"
+      },
+      "BSIFRP03": {
+        "description": "SAP > TESS Consolidate production receipts"
+      },
+      "BSIFRP04": {
+        "description": "Process rejected production receipts SAP>TESS"
+      },
+      "BSIFRP05": {
+        "description": "SAP to TESS disgorge interface control program"
+      },
+      "BSIFRP06": {
+        "description": "SAP to TESS disgorge interface update files"
+      },
+      "BSIFRP07": {
+        "description": "Cognos to TESS Stock allocations"
+      },
+      "BSIFRP08": {
+        "description": "Cognos to TESS De-allocate stock from an order"
+      },
+      "BSIFRP09": {
+        "description": "Mass De-allocation select screen - Cognos IF"
+      },
+      "BSIFRP10": {
+        "description": "TM1 to TESS load plan interface control"
+      },
+      "BSIFRP12": {
+        "description": "TESS > TM1 load plan extract"
+      },
+      "BSIFRP13": {
+        "description": "Update the sequence number with NAV for PI i/face"
+      },
+      "BSISRS03": {
+        "description": "Casks available summary repory selection program."
+      },
+      "BSISRS04": {
+        "description": "Casks Filled - Chronological order for Location."
+      },
+      "BSISRS05": {
+        "description": "Cask filled Summary Report"
+      },
+      "BSISSBM3": {
+        "description": null
+      },
+      "BSISSBM4": {
+        "description": null
+      },
+      "BSISSBM5": {
+        "description": null
+      },
+      "BSLBRI06": {
+        "description": "Print Removal Rent Invoices"
+      },
+      "BSLBRI07": {
+        "description": "Print New Fillings Invoices"
+      },
+      "BSLBRI09": {
+        "description": "Annual Rent Invoice Print"
+      },
+      "BSRBAC26": {
+        "description": "Detailed Stock Valuation - new version 11/3/03"
+      },
+      "BSRBCA02": {
+        "description": "purchase whisky from third party."
+      },
+      "BSRBCA03": {
+        "description": "Exchange whisky."
+      },
+      "BSRBCA04": {
+        "description": "Cask movements."
+      },
+      "BSRBCA05": {
+        "description": "Racked casks."
+      },
+      "BSRBCA06": {
+        "description": "Lost casks."
+      },
+      "BSRBCA10": {
+        "description": "Call for automatic exchange."
+      },
+      "BSRBCA11": {
+        "description": "Letter of Authorisation - front end"
+      },
+      "BSRBCA17": {
+        "description": "Selection of contract detail print."
+      },
+      "BSRBCA24": {
+        "description": "Close contracts - batch update."
+      },
+      "BSRBCA28": {
+        "description": "Despatch sales."
+      },
+      "BSRBCA31": {
+        "description": "Customer stock transfer."
+      },
+      "BSRBCA33": {
+        "description": "Delete parcels.",
+        "parameters": {
+          "DFTACTGRP": "*NO"
+        }
+      },
+      "BSRBCA36": {
+        "description": "submit job"
+      },
+      "BSRBCA36L": {
+        "description": "Call BSRBCA36 from Lansa"
+      },
+      "BSRBCA38": {
+        "description": "Clear workfiles and call bsrbra38"
+      },
+      "BSRBCA39": {
+        "description": "Sale of stock at AYS date controlling program."
+      },
+      "BSRBCA40": {
+        "description": "Submit NBD malt loads interface"
+      },
+      "BSRBCA42": {
+        "description": "DELIVERY ORDER PRINT CONTROLLING PGM"
+      },
+      "BSRBCA47": {
+        "description": "Control printing of deliv. ord. etc. - sales inv."
+      },
+      "BSRBCA48": {
+        "description": "Submit delivery order print to batch. (sales inv.)"
+      },
+      "BSRBCA50": {
+        "description": "Delivery Order Controlling Pgm for R&B/CV Stk Tfr"
+      },
+      "BSRBCA51": {
+        "description": "Delivery Order Controlling Pgm for R&B/CV Stk Tfr"
+      },
+      "BSRBCA59": {
+        "description": "Receive BSNBPF76 from NBD: Stock Reconcilliation"
+      },
+      "BSRBCC03": {
+        "description": "Subs Monthly Blending Schedule List"
+      },
+      "BSRBCC11": {
+        "description": "Submits available stock prints programs"
+      },
+      "BSRBCC13": {
+        "description": "Submits Summary stock prints / Months / 10 Years"
+      },
+      "BSRBCC13A": {
+        "description": "Controlling program for Stock summary prints."
+      },
+      "BSRBCC13B": {
+        "description": "Controlling Program For Stock Summary Prints"
+      },
+      "BSRBCC18": {
+        "description": "Allocation of blend numbers to scrolls"
+      },
+      "BSRBCC22": {
+        "description": "Stock Allocation/Deallocation"
+      },
+      "BSRBCC26": {
+        "description": "Check Interim Scrolls against make-up - SBMJOB"
+      },
+      "BSRBCC27": {
+        "description": "Request Order Forward Documentation CLP"
+      },
+      "BSRBCC28": {
+        "description": "Order Forward Documentation - Batch Run CLP"
+      },
+      "BSRBCC31": {
+        "description": "Check Interim Scrolls - SBMJOB"
+      },
+      "BSRBCC33": {
+        "description": "Scroll production controlling program."
+      },
+      "BSRBCC33B": {
+        "description": "Scroll production controlling program."
+      },
+      "BSRBCC33C": {
+        "description": "Call the NB scroll program"
+      },
+      "BSRBCC33D": {
+        "description": "Call warrant print program"
+      },
+      "BSRBCC34": {
+        "description": "Freight note production controlling program."
+      },
+      "BSRBCC49": {
+        "description": "Scroll Status Descriptions"
+      },
+      "BSRBCC54": {
+        "description": "MSGO Vattings extract - clear workfile"
+      },
+      "BSRBCC55": {
+        "description": "Clear and create workfile for MSGO Loss analysis"
+      },
+      "BSRBCC56": {
+        "description": "Stock in wrong ownership - clear file etc"
+      },
+      "BSRBCC79": {
+        "description": "Submit NB Summary stock prints: Months/ 10 Years"
+      },
+      "BSRBCC79A": {
+        "description": "NBD Alternative summary prints."
+      },
+      "BSRBCC79B": {
+        "description": "Controlling Program for stock summary prints"
+      },
+      "BSRBCD03": {
+        "description": "Calls list of stock operations"
+      },
+      "BSRBCD22": {
+        "description": "Stock On-line Allocation for Operations"
+      },
+      "BSRBCD27": {
+        "description": "Request Order Forward Documentation (BOTTLING)"
+      },
+      "BSRBCD28": {
+        "description": "Order Forward BOTTLING Documentation - batch run"
+      },
+      "BSRBCF03": {
+        "description": "Wood Summary Report"
+      },
+      "BSRBCI04": {
+        "description": "Sales invoicing CLP."
+      },
+      "BSRBCI06": {
+        "description": "Removal rents invoicing CLP."
+      },
+      "BSRBCI07": {
+        "description": "New fillings invoicing CLP."
+      },
+      "BSRBCI10": {
+        "description": "Annual rents invoicing CLP."
+      },
+      "BSRBCI27": {
+        "description": "Rents Payable Batch Acceptance (+ Reorgs)"
+      },
+      "BSRBCI44": {
+        "description": "Clear and allocate RB wkfile process NB Rent infce"
+      },
+      "BSRBCI45": {
+        "description": "Alloc HD workfile for NB Rents interface"
+      },
+      "BSRBCI46": {
+        "description": "NBD Annual Rents Interface CLP."
+      },
+      "BSRBCI62": {
+        "description": "Print Operational Sales Weekly Invoices"
+      },
+      "BSRBCJ02": {
+        "description": "Mthly Recon.(Comp as QSECOFR adopt owner authorty)"
+      },
+      "BSRBCJ30": {
+        "description": "Submit reconciliation reports to batch."
+      },
+      "BSRBCJ31": {
+        "description": "Extract and Print Reconciliation report (1)"
+      },
+      "BSRBCJ32": {
+        "description": "Extract and Print Reconciliation report (2)"
+      },
+      "BSRBCM73": {
+        "description": "Select year for calendar period-end maintenance."
+      },
+      "BSRBCO51": {
+        "description": "Shipment schedule/blend make-up print selection."
+      },
+      "BSRBCP03": {
+        "description": "Bulk Stock - Stocktaking"
+      },
+      "BSRBCP67": {
+        "description": "Locations/subsites print selection."
+      },
+      "BSRBCP81": {
+        "description": "Prices for new filling sales."
+      },
+      "BSRBCQ01": {
+        "description": "Audit Trail - Transaction History"
+      },
+      "BSRBCQ03": {
+        "description": "Control of audit trail program"
+      },
+      "BSRBCQ17": {
+        "description": "Extract & Print of Cask Analysis Audit Trail"
+      },
+      "BSRBCQ32": {
+        "description": "Submit BSRBCQ33"
+      },
+      "BSRBCQ33": {
+        "description": "Call program to produce stock prints"
+      },
+      "BSRBCQ70": {
+        "description": "Run Bottling Losses Report."
+      },
+      "BSRBCQ70D": {
+        "description": "Run Bottling Losses report (New)"
+      },
+      "BSRBCQ70FR": {
+        "description": "Macallan bottling losses rpt (tanker/vat/bottle)."
+      },
+      "BSRBCQ80": {
+        "description": "Bottling costs report."
+      },
+      "BSRBCQ93": {
+        "description": "Cask Analysis controlling CL program."
+      },
+      "BSRBCQ97": {
+        "description": "Run stock Operation control report"
+      },
+      "BSRBCX02": {
+        "description": "Parcels File extract of live stock for SAP."
+      },
+      "BSRBCX03": {
+        "description": "Copy of BSRBCX02 - create backup file weekly"
+      },
+      "BSRBCX04": {
+        "description": "Create extracted files for auditors"
+      },
+      "BSRBCX51": {
+        "description": "Batch Update for change to Blend Marks grouping"
+      },
+      "BSRBCX56": {
+        "description": "Batch update for change to distillery grouping."
+      },
+      "BSRBCX62": {
+        "description": "Update stock parcels - change rent code or type."
+      },
+      "BSRBCY31": {
+        "description": "Transaction History Enquiry Selection Menu"
+      },
+      "BSRBC27A": {
+        "description": "MACALLAN Request O/fwd Forward Blend Documentation"
+      },
+      "BSRBC33C": {
+        "description": "Picking list controlling program."
+      },
+      "BSRBC33D": {
+        "description": "Warrant print for Macallan."
+      },
+      "BSRBC36F": {
+        "description": "Order forward report"
+      },
+      "BSRBC36H": {
+        "description": "Order forward analysis report"
+      },
+      "BSRBC37C": {
+        "description": "Select option report"
+      },
+      "BSRBEX02": {
+        "description": "Live stock extract for SAP business warehouse."
+      },
+      "BSRBPFA7_1": {
+        "description": "Archive records on BSRBPFA7"
+      },
+      "BSRBPFA8_1": {
+        "description": "Archive records on BSRBPFA8"
+      },
+      "BSRBPFD3_1": {
+        "description": "BSRBPFD3 Archive records"
+      },
+      "BSRBPFS1TR": {
+        "description": "EDFSS integration - RPGLE trigger for BSRBPFS1"
+      },
+      "BSRBPFS2TR": {
+        "description": "EDFSS integration - RPGLE trigger for BSRBPFS2"
+      },
+      "BSRBPFU2_1": {
+        "description": "Archive records in BSRBPFU2"
+      },
+      "BSRBPFU6_1": {
+        "description": "Archive records in BSRBPFU6"
+      },
+      "BSRBPFV1_1": {
+        "description": "BSRBPFV1 archive records."
+      },
+      "BSRBPF18_1": {
+        "description": "Archive &clean records in BSRBPF18"
+      },
+      "BSRBPF21_1": {
+        "description": "BSRBPF21 Archive and Update Recs"
+      },
+      "BSRBPF22_1": {
+        "description": "BSRBPF22 Archive Records"
+      },
+      "BSRBPF23_1": {
+        "description": "BSRBPF23 Archive Records"
+      },
+      "BSRBPF24_1": {
+        "description": "BSRBPF24 Archive records"
+      },
+      "BSRBPF25_1": {
+        "description": "BSRBPF25 Archive records."
+      },
+      "BSRBPF25_2": {
+        "description": "Second go at data cleanse for BSRBPF25"
+      },
+      "BSRBPF31_1": {
+        "description": "BSRBPF31 Archive Recs"
+      },
+      "BSRBPF33_1": {
+        "description": "Archive records from BSRBPF33"
+      },
+      "BSRBPF35_1": {
+        "description": "BSRBPF35 Archive records."
+      },
+      "BSRBPF36_1": {
+        "description": "program to archive records from BSRBPF36"
+      },
+      "BSRBPF37_1": {
+        "description": "BSRBPF37_1 Archive recs and add master data"
+      },
+      "BSRBPF41_1": {
+        "description": "Archive records from BSRBPF41/42"
+      },
+      "BSRBPF42_1": {
+        "description": "Archive remaining records on BSRBPF42"
+      },
+      "BSRBPF44_1": {
+        "description": "Archiving records for owner \"BC\" BSRBPF44"
+      },
+      "BSRBPF45_1": {
+        "description": "Archiving records for owner \"BC\" BSRBPF45"
+      },
+      "BSRBPF47_1": {
+        "description": "BSRBPF47 Archive records"
+      },
+      "BSRBPF59_1": {
+        "description": "BSRBPF59 Data Cleanse"
+      },
+      "BSRBPF60_1": {
+        "description": "BSRBPF60 Archive Recs"
+      },
+      "BSRBPF62_1": {
+        "description": "BSRBPF62 Archive Recs"
+      },
+      "BSRBPF63_1": {
+        "description": "BSRBPF63 Archive program."
+      },
+      "BSRBPF66_1": {
+        "description": "Archive records in BSRBPF66"
+      },
+      "BSRBPF68_1": {
+        "description": "BSRBPF68 Archive Recs"
+      },
+      "BSRBPF75_1": {
+        "description": "Archive bsrbpf75"
+      },
+      "BSRBPF80_1": {
+        "description": "BSRBPF80 Archive Recs"
+      },
+      "BSRBPF81_1": {
+        "description": "Archive records on BSRBPF81"
+      },
+      "BSRBPW01_1": {
+        "description": "Remove data where w1Data < 01.09.2017"
+      },
+      "BSRBPW45_1": {
+        "description": "Archive records in BSRBPW45"
+      },
+      "BSRBP51A": {
+        "description": "Print list of standard blends"
+      },
+      "BSRBP51B": {
+        "description": "Print list of shipment schedules."
+      },
+      "BSRBP51C": {
+        "description": "Blend make-up report (SH)."
+      },
+      "BSRBP51D": {
+        "description": "Blend make-up report."
+      },
+      "BSRBRA01": {
+        "description": "NBD stock check pgm to prevent duplicate recs."
+      },
+      "BSRBRA02": {
+        "description": "Purchase whisky from a third party"
+      },
+      "BSRBRA03": {
+        "description": "Exchange Whisky."
+      },
+      "BSRBRA04": {
+        "description": "Cask movements."
+      },
+      "BSRBRA05": {
+        "description": "Racked casks."
+      },
+      "BSRBRA06": {
+        "description": "Lost casks."
+      },
+      "BSRBRA07": {
+        "description": "Reserve / dereserve stock."
+      },
+      "BSRBRA09": {
+        "description": "Selection for reserved stock report"
+      },
+      "BSRBRA10": {
+        "description": "IWDD - intention to despatch."
+      },
+      "BSRBRA11": {
+        "description": "Automatic Letter Of Authorisation"
+      },
+      "BSRBRA11A": {
+        "description": "Select Letter of Authorisation(Intent to Despatch)"
+      },
+      "BSRBRA13": {
+        "description": "Contract Maintenance."
+      },
+      "BSRBRA14": {
+        "description": "Contract Close."
+      },
+      "BSRBRA15": {
+        "description": "Contract Enquiry."
+      },
+      "BSRBRA16": {
+        "description": "Contract headers print."
+      },
+      "BSRBRA18": {
+        "description": "Purchase Whisky - Group Company."
+      },
+      "BSRBRA19": {
+        "description": "Contract Reactivation."
+      },
+      "BSRBRA24": {
+        "description": "Close contracts - file updates."
+      },
+      "BSRBRA25": {
+        "description": "Reserved stock report"
+      },
+      "BSRBRA26": {
+        "description": "Change I.W.D.D."
+      },
+      "BSRBRA28": {
+        "description": "Sale of stock."
+      },
+      "BSRBRA29": {
+        "description": "Stock file corrections."
+      },
+      "BSRBRA30": {
+        "description": "Bulk Litres Correction"
+      },
+      "BSRBRA31": {
+        "description": "Customer stock transfer."
+      },
+      "BSRBRA32": {
+        "description": "Litres of alcohol correction"
+      },
+      "BSRBRA33": {
+        "description": "Delete parcels."
+      },
+      "BSRBRA33A": {
+        "description": "Delete parcel (stock file correc. new version)"
+      },
+      "BSRBRA34": {
+        "description": "Add parcels."
+      },
+      "BSRBRA34A": {
+        "description": "Add/Parcel (called from stock file correction)"
+      },
+      "BSRBRA35": {
+        "description": "Comments maintenance"
+      },
+      "BSRBRA36": {
+        "description": "Enter parameters to produce EMCS file/fallback doc"
+      },
+      "BSRBRA37": {
+        "description": "Exchanges - amend 3rd party litres."
+      },
+      "BSRBRA38": {
+        "description": "Produce EMCS file and/or Fallback document"
+      },
+      "BSRBRA39": {
+        "description": "Sale of stock (Selling at AYS date)."
+      },
+      "BSRBRA40": {
+        "description": "Produce CSV file for NBD malt loads interface"
+      },
+      "BSRBRA42": {
+        "description": "Deliv. Ord. & Covering Letter print pgm for Exchgs"
+      },
+      "BSRBRA43": {
+        "description": "Letter of acknowledgement print program."
+      },
+      "BSRBRA47": {
+        "description": "PRINT PROGRAM FOR DELIV. ORDERS & COVERING LETTER."
+      },
+      "BSRBRA47A": {
+        "description": "Sales delivery order program."
+      },
+      "BSRBRA48": {
+        "description": "LETTER OF ACKNOWLEDGEMENT OF RECPT - DESPATCH SALE"
+      },
+      "BSRBRA49": {
+        "description": "Letter of acknwoledgement of transfer for exchgs."
+      },
+      "BSRBRA54": {
+        "description": "Letter of acknowledgement of transfer for sales."
+      },
+      "BSRBRA57": {
+        "description": "Reservation codes validation"
+      },
+      "BSRBRA58": {
+        "description": "Reservation codes Update and Report"
+      },
+      "BSRBRA59": {
+        "description": "NB Purch interface - produce status 1 stock"
+      },
+      "BSRBRA60": {
+        "description": "NB Interface - Purchase New Filled Whisky."
+      },
+      "BSRBRA61": {
+        "description": "Load data from third parties for Purch/exchange"
+      },
+      "BSRBRA62": {
+        "description": "Purchase whisky from 3rd parties from status 1 stk"
+      },
+      "BSRBRA76": {
+        "description": "Costs update for automatic exchange"
+      },
+      "BSRBRA83": {
+        "description": "BS5750 Report Heading & Reference Number retrieval"
+      },
+      "BSRBRA84": {
+        "description": "Retrieve Contract Number for Passed Parcel Details"
+      },
+      "BSRBRA92": {
+        "description": "stock transfer between Group Own with same SAP COY"
+      },
+      "BSRBRA92A": {
+        "description": "Delivery Order Pgm (ED/CV Stk Tfr)"
+      },
+      "BSRBRA92B": {
+        "description": "PRINT PROGRAM FOR DELIV. ORDERS & COVERING LETTER."
+      },
+      "BSRBRC01": {
+        "description": "Blending Programme Maintenance"
+      },
+      "BSRBRC02": {
+        "description": "blending programme review"
+      },
+      "BSRBRC03": {
+        "description": "Monthly Blending Schedule Scroll Selection"
+      },
+      "BSRBRC04": {
+        "description": "Monthly Blending Schedule Scroll List"
+      },
+      "BSRBRC05": {
+        "description": "Monthly Blending Schedule Approval"
+      },
+      "BSRBRC06": {
+        "description": "Validation & Processing of W.B.C.L. decisions"
+      },
+      "BSRBRC07": {
+        "description": "Stock Available Selection Criteria"
+      },
+      "BSRBRC08": {
+        "description": "Stock Master Enquiry"
+      },
+      "BSRBRC09": {
+        "description": "Stock Summary Enquiry"
+      },
+      "BSRBRC10": {
+        "description": "Stock Parcel Enquiry"
+      },
+      "BSRBRC11": {
+        "description": "Macallan quality update"
+      },
+      "BSRBRC11B": {
+        "description": "Macallan quality update for Parcel"
+      },
+      "BSRBRC11C": {
+        "description": "Macallan quality update: Perform update"
+      },
+      "BSRBRC13": {
+        "description": "Print Stock Summary"
+      },
+      "BSRBRC16": {
+        "description": "Blending Programme Creation"
+      },
+      "BSRBRC17": {
+        "description": "Add I.V.D. to scrolls"
+      },
+      "BSRBRC18": {
+        "description": "Allocate Blend Numbers to temporary scrolls"
+      },
+      "BSRBRC19": {
+        "description": "Alternative Stock Parcel Print."
+      },
+      "BSRBRC20": {
+        "description": "Request Macallan sample requests and labels"
+      },
+      "BSRBRC20B": {
+        "description": "Sample requests documents & labels for Macallan"
+      },
+      "BSRBRC20C": {
+        "description": "Sample requests documents & labels for Macallan"
+      },
+      "BSRBRC21": {
+        "description": "Check Interim Blends/Rackings."
+      },
+      "BSRBRC22": {
+        "description": "In-line Stock Allocation (Deallocation)"
+      },
+      "BSRBRC22X_": {
+        "description": "On-line Stock Allocation (Deallocation)"
+      },
+      "BSRBRC23": {
+        "description": "Specific Quality Parameter Selection"
+      },
+      "BSRBRC24": {
+        "description": "Check Interim Blends against make-up enquiry"
+      },
+      "BSRBRC25": {
+        "description": "Check Interim Blends against make-up"
+      },
+      "BSRBRC26": {
+        "description": "Check Interim Scroll (BATCH)"
+      },
+      "BSRBRC27": {
+        "description": "Request Order Forward Documentation"
+      },
+      "BSRBRC28": {
+        "description": "Load workfile BSRBPW04 for Order Forward Documents"
+      },
+      "BSRBRC29": {
+        "description": "Print Order Forward Notice - file copy"
+      },
+      "BSRBRC30": {
+        "description": "Order Forward Notice - Postal Copy"
+      },
+      "BSRBRC31": {
+        "description": "Check Interim Scroll Report."
+      },
+      "BSRBRC32": {
+        "description": "Calculate Actual A.Y.S. of scroll"
+      },
+      "BSRBRC33": {
+        "description": "Order Forward Documentation - Scroll report"
+      },
+      "BSRBRC33B": {
+        "description": "O/F Documentation - Scroll report Order Sequence"
+      },
+      "BSRBRC33C": {
+        "description": "North British Scroll report"
+      },
+      "BSRBRC34": {
+        "description": "Order Forward Freight Note print"
+      },
+      "BSRBRC35": {
+        "description": "Wood percentage report by shipment schedule"
+      },
+      "BSRBRC39": {
+        "description": "Berry bros ordfwd report in letter form"
+      },
+      "BSRBRC40": {
+        "description": "Replacements"
+      },
+      "BSRBRC41": {
+        "description": "Stock replacements report"
+      },
+      "BSRBRC42": {
+        "description": "Replacements system - On line stock allocation."
+      },
+      "BSRBRC43": {
+        "description": "Replacements enquiry."
+      },
+      "BSRBRC45": {
+        "description": "Macallan blend o/fwd rollback."
+      },
+      "BSRBRC54": {
+        "description": "MSGO vattings extract - create workfile"
+      },
+      "BSRBRC55": {
+        "description": "Create workfile for MSGO loss analysis"
+      },
+      "BSRBRC56": {
+        "description": "Create file of stock in wrong ownership"
+      },
+      "BSRBRC57": {
+        "description": "Selection for order forward ratio report"
+      },
+      "BSRBRC59": {
+        "description": "Stock by order no report selection"
+      },
+      "BSRBRC60": {
+        "description": "stock by order no report"
+      },
+      "BSRBRC69": {
+        "description": "Bulk Stock Order Forward Sherry Wood Usage Report"
+      },
+      "BSRBRC70": {
+        "description": "Split Parcels into single casks"
+      },
+      "BSRBRC71": {
+        "description": "Bottling marks which require samples maintenance."
+      },
+      "BSRBRC72": {
+        "description": "Split Parcels into single casks (MAC only)"
+      },
+      "BSRBRC74": {
+        "description": "Stock Summary Enquiry"
+      },
+      "BSRBRC78": {
+        "description": "N.B Stock Master Enquiry"
+      },
+      "BSRBRC80": {
+        "description": "Order Forward Stopper."
+      },
+      "BSRBRC81": {
+        "description": "Order forward stopper for automatic exchange."
+      },
+      "BSRBRC82": {
+        "description": "Automatic Exchange check for uncosted partial exch"
+      },
+      "BSRBRC83": {
+        "description": "Ord/Fwd Stopper Not Auto Exch. Stk own ne bld own."
+      },
+      "BSRBRC84": {
+        "description": "Split parcels into casks for Original Vatting"
+      },
+      "BSRBRD01": {
+        "description": "Set up operational scroll"
+      },
+      "BSRBRD02": {
+        "description": "Operational scroll maintenance"
+      },
+      "BSRBRD03": {
+        "description": "Request list of stock operations"
+      },
+      "BSRBRD04": {
+        "description": "List of stock operations"
+      },
+      "BSRBRD06": {
+        "description": "Validation & processing of W.B.C.L. (Bottling)"
+      },
+      "BSRBRD10": {
+        "description": "Maintain purchase orders for order scrolls."
+      },
+      "BSRBRD22": {
+        "description": "On-line allocations for operations"
+      },
+      "BSRBRD24": {
+        "description": "Operational scroll enquiry program"
+      },
+      "BSRBRD25": {
+        "description": "Request Macallan sample requests and labels"
+      },
+      "BSRBRD25B": {
+        "description": "Sample requests documents & labels for Macallan"
+      },
+      "BSRBRD27": {
+        "description": "Request Order Forward Bottling Documentation"
+      },
+      "BSRBRD27A": {
+        "description": "Update data area BOTOFWD to \"R\"."
+      },
+      "BSRBRD27B": {
+        "description": "Bottling O/fwd update data area to \"F\""
+      },
+      "BSRBRD28": {
+        "description": "Load workfile BSRBPW16 for O.F. Bottling Documents"
+      },
+      "BSRBRD29": {
+        "description": "Order Forward Notice (Bottling) - file copy"
+      },
+      "BSRBRD30": {
+        "description": "Order Forward Notice (Bottling) - Postal Copy"
+      },
+      "BSRBRD33": {
+        "description": "Order Forward"
+      },
+      "BSRBRD34": {
+        "description": "Order Forward Freight Note (Bottling)"
+      },
+      "BSRBRD59": {
+        "description": "Cased outturn interface for Operational sales"
+      },
+      "BSRBRD87": {
+        "description": "Automatic bottling deallocation"
+      },
+      "BSRBRF01": {
+        "description": "Rent Accruals by Selective Prcl (Also see RF01A)"
+      },
+      "BSRBRF01A": {
+        "description": "Rent Accruals by Selective Parcels(no commit )"
+      },
+      "BSRBRF03": {
+        "description": "Wood Summary Optional Selection"
+      },
+      "BSRBRF04": {
+        "description": "Wood Summary"
+      },
+      "BSRBRF17": {
+        "description": "Flexible Recosting enter price changes (RPG IV)"
+      },
+      "BSRBRF18": {
+        "description": "Flexible Recosting UPDATE AND REPORT"
+      },
+      "BSRBRF21": {
+        "description": "Insurance Valuation (RPG IV)"
+      },
+      "BSRBRF23": {
+        "description": "Stock Valuation Selection Criteria (RPG IV)"
+      },
+      "BSRBRF24": {
+        "description": "Yearly Stock Valuation"
+      },
+      "BSRBRF25": {
+        "description": "Summary Stock Valuation"
+      },
+      "BSRBRF33": {
+        "description": "Unit Costs"
+      },
+      "BSRBRF35": {
+        "description": "Blend stock report for period end"
+      },
+      "BSRBRF37": {
+        "description": "Yearly Valuation by Make with Cask Totals"
+      },
+      "BSRBRF38": {
+        "description": "Yearly Location Valuation Summary"
+      },
+      "BSRBRF38S": {
+        "description": "Selection Screen for Yearly Location"
+      },
+      "BSRBRF40": {
+        "description": "Detailed Stock Valuation liabilities only"
+      },
+      "BSRBRF43": {
+        "description": "Summarised Stock Report - blended Whisky."
+      },
+      "BSRBRF45": {
+        "description": "Blend Stock Report"
+      },
+      "BSRBRI01": {
+        "description": "Review transactions for processing."
+      },
+      "BSRBRI02": {
+        "description": "Create Invoices for processing."
+      },
+      "BSRBRI03": {
+        "description": "Sales Invoicing - Review Invoices for Printing"
+      },
+      "BSRBRI04": {
+        "description": "Sales Invoice Printing"
+      },
+      "BSRBRI05": {
+        "description": "Sales Invoicing Printed/Processed Invoice Review"
+      },
+      "BSRBRI08": {
+        "description": "Review Printed/Processed Rent Invoices"
+      },
+      "BSRBRI12": {
+        "description": "Invoice Date/Posting Period Entry"
+      },
+      "BSRBRI15": {
+        "description": "Invoice Numbering Selection of Type"
+      },
+      "BSRBRI16": {
+        "description": "Update Invoice Status (Trigger Type 2)"
+      },
+      "BSRBRI20": {
+        "description": "Set up invoicing paramenters."
+      },
+      "BSRBRI21": {
+        "description": "Accept Group Rents Payable"
+      },
+      "BSRBRI22": {
+        "description": "Processed Rent Invoice Enquiry"
+      },
+      "BSRBRI23": {
+        "description": "Payment of Non-group Rent Charges"
+      },
+      "BSRBRI24": {
+        "description": "Annual Rents Charged Selection"
+      },
+      "BSRBRI25": {
+        "description": "Annual Rents Charged Comparison Report"
+      },
+      "BSRBRI26": {
+        "description": "Annual Rents Payable Acceptance"
+      },
+      "BSRBRI27": {
+        "description": "Annual Rents Payable Batch Acceptance"
+      },
+      "BSRBRI28": {
+        "description": "Bulk Stock - Removal Rent Outstanding Selection"
+      },
+      "BSRBRI29": {
+        "description": "Bulk Stock - Outstanding Removal Rent Report"
+      },
+      "BSRBRI32": {
+        "description": "Bulk Stock - Removal Rent Outstanding Selection"
+      },
+      "BSRBRI33": {
+        "description": "Rent Processed Report"
+      },
+      "BSRBRI43": {
+        "description": "NB rent interface - process transmitted rent info"
+      },
+      "BSRBRI43A": {
+        "description": "Clear out duff records sent by NBD. (BBridg => MH)"
+      },
+      "BSRBRI44": {
+        "description": "Annual Rents Charged Sel. (NBD ifce.)"
+      },
+      "BSRBRI45": {
+        "description": "Annual Rents Charged Comparison Report"
+      },
+      "BSRBRI49": {
+        "description": "Rent Rates Comparison Report Selection"
+      },
+      "BSRBRI50": {
+        "description": "Rent Rates Comparison Report"
+      },
+      "BSRBRI53": {
+        "description": "Enter Invoice Date/Posting Period for Weekly Inv."
+      },
+      "BSRBRI54": {
+        "description": "Print Operational Sales Weekly Invoices"
+      },
+      "BSRBRJ01": {
+        "description": "Validate/access accrual date for reconcilliations."
+      },
+      "BSRBRJ02": {
+        "description": "Automatic submission of period end - NO DISPLAY"
+      },
+      "BSRBRJ04": {
+        "description": "Accrue Rents."
+      },
+      "BSRBRJ06": {
+        "description": "Reconcile litres with parcels."
+      },
+      "BSRBRJ07": {
+        "description": "Reconcile parcels with controls."
+      },
+      "BSRBRJ08": {
+        "description": "Reconcile Rent O/S to control."
+      },
+      "BSRBRJ10": {
+        "description": "Reconcile liabilities with control."
+      },
+      "BSRBRJ11": {
+        "description": "Reconcile Parcels File with Summary"
+      },
+      "BSRBRJ21": {
+        "description": "Set up B/F Parcel Controls."
+      },
+      "BSRBRJ22": {
+        "description": "Set Up B/F Rent Controls."
+      },
+      "BSRBRJ24": {
+        "description": "set up B/F Liability controls."
+      },
+      "BSRBRJ32": {
+        "description": "Extract data for reconciliation report (2)"
+      },
+      "BSRBRJ33": {
+        "description": "Print reconciliation report (2)."
+      },
+      "BSRBRJ34": {
+        "description": "extract totals for rent reconciliation report"
+      },
+      "BSRBRJ35": {
+        "description": "rent reconciliation report"
+      },
+      "BSRBRJ39": {
+        "description": "Print reconciliation report - summary (2)."
+      },
+      "BSRBRJ55": {
+        "description": "Update Current Year/Month Constant."
+      },
+      "BSRBRJ70": {
+        "description": "Extract data for summary movement report."
+      },
+      "BSRBRJ71": {
+        "description": "Print summary movement report."
+      },
+      "BSRBRJ92": {
+        "description": "Overnight recon - check for lock records left"
+      },
+      "BSRBRMA8": {
+        "description": "Purchases interface to SAP - analysis codes"
+      },
+      "BSRBRMD3": {
+        "description": "NBD Stock movements parameters maintenance"
+      },
+      "BSRBRME5": {
+        "description": "Maintain Excise warehousekeeper address details"
+      },
+      "BSRBRMU2": {
+        "description": "SAP SAles and Cost of sales account codes Maint"
+      },
+      "BSRBRMU6": {
+        "description": "Originator Override Maintenance"
+      },
+      "BSRBRMV1": {
+        "description": "version no. file comments maintenance"
+      },
+      "BSRBRM05": {
+        "description": "Financial Blend Group Maintenance"
+      },
+      "BSRBRM07": {
+        "description": "BS: Location sort code maintenance."
+      },
+      "BSRBRM12": {
+        "description": "Move order blend programme from one month to anoth"
+      },
+      "BSRBRM17": {
+        "description": "Delete NBD new fillings"
+      },
+      "BSRBRM28": {
+        "description": "BS: Location sort code maintenance."
+      },
+      "BSRBRM41": {
+        "description": "Operational sales - price maintenance."
+      },
+      "BSRBRM44": {
+        "description": "Group sales - price maintenance."
+      },
+      "BSRBRM48": {
+        "description": "Carrier maintenance."
+      },
+      "BSRBRM51": {
+        "description": "Shipment schedule maintenance."
+      },
+      "BSRBRM52": {
+        "description": "Blend make-up/ingredients maintenance."
+      },
+      "BSRBRM53": {
+        "description": "Contract type maintenance."
+      },
+      "BSRBRM54": {
+        "description": "Whisky type maintenance."
+      },
+      "BSRBRM55": {
+        "description": "Distillery Group maintenance."
+      },
+      "BSRBRM56": {
+        "description": "nge Management system."
+      },
+      "BSRBRM57": {
+        "description": "Cask (wood) type maintenance."
+      },
+      "BSRBRM58": {
+        "description": "Work with Parts using SCDM"
+      },
+      "BSRBRM59": {
+        "description": "Owner maintenance."
+      },
+      "BSRBRM60": {
+        "description": "Account maintenance."
+      },
+      "BSRBRM61": {
+        "description": "Ledger interface Codes maintenance"
+      },
+      "BSRBRM62": {
+        "description": "New filling price codes maintenance."
+      },
+      "BSRBRM63": {
+        "description": "Reservation maintenance."
+      },
+      "BSRBRM66": {
+        "description": "Invoice terms maintenance."
+      },
+      "BSRBRM67": {
+        "description": "Location maintenance."
+      },
+      "BSRBRM68": {
+        "description": "Loss Tolerance Maintenance"
+      },
+      "BSRBRM69": {
+        "description": "Blending warehouse maintenance."
+      },
+      "BSRBRM71": {
+        "description": "Transport maintenance"
+      },
+      "BSRBRM72": {
+        "description": "Tariff trade code number maintenance."
+      },
+      "BSRBRM73": {
+        "description": "Calendar period-end maintenance."
+      },
+      "BSRBRM76": {
+        "description": "Vat type maintenance."
+      },
+      "BSRBRM80": {
+        "description": "Prices for valuation of stock maintenance."
+      },
+      "BSRBRM81": {
+        "description": "Prices for new filling sales maintenance."
+      },
+      "BSRBRM92": {
+        "description": "Surplus/Deficit Maintenance of ED/CV Transfers."
+      },
+      "BSRBRM93": {
+        "description": "Constants maintenance."
+      },
+      "BSRBRM94": {
+        "description": "Reconciliation headings maintenance."
+      },
+      "BSRBRM95": {
+        "description": "Transaction types per recon. heading maintenance."
+      },
+      "BSRBRM96": {
+        "description": "WBCL Error Message File Maintenance"
+      },
+      "BSRBRM97": {
+        "description": "Transaction type maintenance."
+      },
+      "BSRBRM99": {
+        "description": "Blend owner maintenance"
+      },
+      "BSRBRN01": {
+        "description": "Stock Enquiry"
+      },
+      "BSRBRN05": {
+        "description": "Financial Blend Group Enquiry"
+      },
+      "BSRBRN07": {
+        "description": "BS: Location sort code enquiry."
+      },
+      "BSRBRN12": {
+        "description": "Transaction history enquiries."
+      },
+      "BSRBRN15": {
+        "description": "Transaction history by order no."
+      },
+      "BSRBRN28": {
+        "description": "BS: NB Location Translation enquiry"
+      },
+      "BSRBRN31": {
+        "description": "Transaction History Enquiry"
+      },
+      "BSRBRN33": {
+        "description": "History Trans - New Fill, Contra Fill & Recost Enq"
+      },
+      "BSRBRN34": {
+        "description": "Transaction History by Shipment Schedule"
+      },
+      "BSRBRN38": {
+        "description": "Stock Transaction History - IWDD Enquiry"
+      },
+      "BSRBRN41": {
+        "description": "Operational sales - price enquiries."
+      },
+      "BSRBRN44": {
+        "description": "Group sales - price enquiries."
+      },
+      "BSRBRN47": {
+        "description": "Location rental rates enquiry."
+      },
+      "BSRBRN48": {
+        "description": "Carrier enquiry."
+      },
+      "BSRBRN51": {
+        "description": "Shipment schedule/blend make-up enquiry."
+      },
+      "BSRBRN53": {
+        "description": "Contract type enquiry."
+      },
+      "BSRBRN54": {
+        "description": "Whisky type enquiry."
+      },
+      "BSRBRN55": {
+        "description": "Distillery Group enquiry."
+      },
+      "BSRBRN56": {
+        "description": "Distillery enquiry."
+      },
+      "BSRBRN57": {
+        "description": "Cask (wood) type enquiry."
+      },
+      "BSRBRN58": {
+        "description": "Cask size enquiry."
+      },
+      "BSRBRN59": {
+        "description": "Owner enquiry."
+      },
+      "BSRBRN60": {
+        "description": "Account enquiry."
+      },
+      "BSRBRN61": {
+        "description": "Ledger interface codes enquiry."
+      },
+      "BSRBRN62": {
+        "description": "New filling price code enquiry."
+      },
+      "BSRBRN63": {
+        "description": "Reservation enquiry."
+      },
+      "BSRBRN64": {
+        "description": "Market enquiry."
+      },
+      "BSRBRN66": {
+        "description": "Invoice terms enquiry"
+      },
+      "BSRBRN67": {
+        "description": "Location enquiry."
+      },
+      "BSRBRN69": {
+        "description": "Blending warehouse enquiry."
+      },
+      "BSRBRN71": {
+        "description": "Transport enquiry."
+      },
+      "BSRBRN72": {
+        "description": "Tariff trade code number enquiry."
+      },
+      "BSRBRN73": {
+        "description": "Calendar Enquiry"
+      },
+      "BSRBRN75": {
+        "description": "Free Format Comments Enquiry"
+      },
+      "BSRBRN76": {
+        "description": "Vat type enquiry."
+      },
+      "BSRBRN80": {
+        "description": "Prices for valuation of stock enquiry."
+      },
+      "BSRBRN81": {
+        "description": "Prices for new filling sales enquiry."
+      },
+      "BSRBRN91": {
+        "description": "Bulk stock next available number"
+      },
+      "BSRBRN93": {
+        "description": "Constatnt''s enquiry"
+      },
+      "BSRBRO51": {
+        "description": "Calculates butts of Grain/Malt and %Malt in Vat"
+      },
+      "BSRBRP02": {
+        "description": "HD Stocktaking Date Selection"
+      },
+      "BSRBRP03": {
+        "description": "Bulk Stock - Stocktaking Data Selection by Date"
+      },
+      "BSRBRP04": {
+        "description": "Bulk Stock - HD Stock Taking Report"
+      },
+      "BSRBRP08": {
+        "description": "Selection for stock spec. print"
+      },
+      "BSRBRP25": {
+        "description": "Invoice History dates input"
+      },
+      "BSRBRP26": {
+        "description": "Invoice History report"
+      },
+      "BSRBRP28": {
+        "description": "N.B Interface - NB Location Translation Report."
+      },
+      "BSRBRP37": {
+        "description": "Invoice History data input"
+      },
+      "BSRBRP38": {
+        "description": "Invoice History report"
+      },
+      "BSRBRP48": {
+        "description": "Carrier code and rates print."
+      },
+      "BSRBRP53": {
+        "description": "Contract types print."
+      },
+      "BSRBRP54": {
+        "description": "Whisky type print."
+      },
+      "BSRBRP55": {
+        "description": "Distillery group print."
+      },
+      "BSRBRP56": {
+        "description": "Distillery print."
+      },
+      "BSRBRP57": {
+        "description": "Cask (wood) type print."
+      },
+      "BSRBRP58": {
+        "description": "Cask size print."
+      },
+      "BSRBRP59": {
+        "description": "Owner code print."
+      },
+      "BSRBRP60": {
+        "description": "Account code print."
+      },
+      "BSRBRP61": {
+        "description": "Ledger interface codes print."
+      },
+      "BSRBRP62": {
+        "description": "New filling price codes print."
+      },
+      "BSRBRP63": {
+        "description": "Reservation code print."
+      },
+      "BSRBRP67": {
+        "description": "Locations/subsites print."
+      },
+      "BSRBRP71": {
+        "description": "Transport code print."
+      },
+      "BSRBRP81": {
+        "description": "Prices for new filling sales."
+      },
+      "BSRBRP93": {
+        "description": "Constants print."
+      },
+      "BSRBRP97": {
+        "description": "Print of Transaction codes & descriptions"
+      },
+      "BSRBRQ01": {
+        "description": "Request audit trails / transactions history"
+      },
+      "BSRBRQ03": {
+        "description": "Control audit trail reports"
+      },
+      "BSRBRQ05": {
+        "description": "Print - Audit trail by transaction number"
+      },
+      "BSRBRQ06": {
+        "description": "Print - Audit trail by date & time of data entry"
+      },
+      "BSRBRQ07": {
+        "description": "Print - Audit trail by fiscal period"
+      },
+      "BSRBRQ08": {
+        "description": "Print - Audit trail by Transaction Date"
+      },
+      "BSRBRQ09": {
+        "description": "Print - Audit Trail by Reconciliation Group"
+      },
+      "BSRBRQ10": {
+        "description": "Print - Audit trail by parcel number"
+      },
+      "BSRBRQ11": {
+        "description": "Print - Audit trail by Contract No."
+      },
+      "BSRBRQ12": {
+        "description": "Print - Transaction History (Scrolls)"
+      },
+      "BSRBRQ12T": {
+        "description": "Print - Transaction History (Scrolls) Tank Farm"
+      },
+      "BSRBRQ13": {
+        "description": "Print - Transaction History by shipment sched. no."
+      },
+      "BSRBRQ13T": {
+        "description": "Print - Transaction by shipment sched. no. Tank Fa"
+      },
+      "BSRBRQ14": {
+        "description": "Print - Audit trail by I.W.D.D."
+      },
+      "BSRBRQ15": {
+        "description": "Print - Audit Trail by Reconciliation Grp(summry)"
+      },
+      "BSRBRQ16": {
+        "description": "Print - Transaction History for New-fillings"
+      },
+      "BSRBRQ17": {
+        "description": "Audit Trail for Cask Analysis"
+      },
+      "BSRBRQ19": {
+        "description": "Print - Transaction History for Recosts"
+      },
+      "BSRBRQ24": {
+        "description": "audit trail by order no. print"
+      },
+      "BSRBRQ31": {
+        "description": "Select option for print"
+      },
+      "BSRBRQ33": {
+        "description": "Call Requested Stock Prints"
+      },
+      "BSRBRQ35": {
+        "description": "Print Stock Details by Distillery"
+      },
+      "BSRBRQ36": {
+        "description": "Stock Print by Distillery and Date Bonded"
+      },
+      "BSRBRQ37": {
+        "description": "Stock Print by Mark"
+      },
+      "BSRBRQ38": {
+        "description": "Stock print by Warehouse, Year & Rotation"
+      },
+      "BSRBRQ39": {
+        "description": "Stock Print by Whse/Yr/Rotn & Cask no."
+      },
+      "BSRBRQ40": {
+        "description": "Stock print by Owner"
+      },
+      "BSRBRQ41": {
+        "description": "Stock Print by Location"
+      },
+      "BSRBRQ42": {
+        "description": "Stock Print by Parcel nos."
+      },
+      "BSRBRQ43": {
+        "description": "Stock Print by Status"
+      },
+      "BSRBRQ44": {
+        "description": "Stock print by H.D Reconciliation Group"
+      },
+      "BSRBRQ45": {
+        "description": "Stock Print By Account code"
+      },
+      "BSRBRQ51": {
+        "description": "New Fillings Report Selection."
+      },
+      "BSRBRQ69": {
+        "description": "selection for blend and bottling losses report"
+      },
+      "BSRBRQ69A": {
+        "description": "Selection pgm for blend & bottling avg age reports"
+      },
+      "BSRBRQ69B": {
+        "description": "selection for blend cost report"
+      },
+      "BSRBRQ70": {
+        "description": "Bottling losses report"
+      },
+      "BSRBRQ70A": {
+        "description": "Blend losses report"
+      },
+      "BSRBRQ70B": {
+        "description": "Extract program for bottling losses report."
+      },
+      "BSRBRQ70D": {
+        "description": "Macallan bottling losses report (tanker losses)."
+      },
+      "BSRBRQ70ER": {
+        "description": "Macallan bottling losses rpt (tanker/vat/bottle)."
+      },
+      "BSRBRQ70F": {
+        "description": "Macallan bottling losses report selection."
+      },
+      "BSRBRQ70M": {
+        "description": "Bottling Losses report - New vserion."
+      },
+      "BSRBRQ70N": {
+        "description": "Blend losses report - New version."
+      },
+      "BSRBRQ70R": {
+        "description": "Bottling Losses with Real Strength reporting"
+      },
+      "BSRBRQ70W": {
+        "description": "Open Rotations Report"
+      },
+      "BSRBRQ70Y": {
+        "description": "Open Bottling Rotation Selection"
+      },
+      "BSRBRQ70Z": {
+        "description": "Bottling Losses Extract by NCOP date"
+      },
+      "BSRBRQ80": {
+        "description": "Blend Cost report"
+      },
+      "BSRBRQ80A": {
+        "description": "Bottling costs report."
+      },
+      "BSRBRQ80B": {
+        "description": "Bottling cost report screen handling."
+      },
+      "BSRBRQ80T": {
+        "description": "Blend Costs report Tank Farm Variant"
+      },
+      "BSRBRQ81": {
+        "description": "Whisky type at each location print"
+      },
+      "BSRBRQ82": {
+        "description": "HD - Report of stock for selected account codes"
+      },
+      "BSRBRQ82A": {
+        "description": "Report of Stock for Selected Account Codes"
+      },
+      "BSRBRQ88": {
+        "description": "Cost of Sales Report"
+      },
+      "BSRBRQ88A": {
+        "description": "Cost of Sales Report"
+      },
+      "BSRBRQ89A": {
+        "description": "Bulk Stock - Cost of Sale Invoice Entry"
+      },
+      "BSRBRQ92": {
+        "description": "Cask analysis selection screen"
+      },
+      "BSRBRQ93": {
+        "description": "Bulk Stock - Cask analysis report generate program"
+      },
+      "BSRBRQ96": {
+        "description": "Bulk Stock - Stock Operation Control"
+      },
+      "BSRBRQ97": {
+        "description": "Bulk Stock - Stock Operation control report"
+      },
+      "BSRBRQ97A": {
+        "description": "1st pass for wrk file bld for stk opern control."
+      },
+      "BSRBRQ98": {
+        "description": "Bulk Stock - Report of singles used in MG blends"
+      },
+      "BSRBRW33": {
+        "description": "Alternative blend mark maintenance"
+      },
+      "BSRBRW99": {
+        "description": "Update period end date constants (PRVPRD & LASPRD)"
+      },
+      "BSRBRX51": {
+        "description": "Amend grouping of Blend Marks"
+      },
+      "BSRBRX56": {
+        "description": "Amend grouping of distillery codes"
+      },
+      "BSRBRY31": {
+        "description": "Read Ltd Access constant and ascertain if Ltd acc."
+      },
+      "BSRBRZ01": {
+        "description": "Top level menu retrieve company name."
+      },
+      "BSRBRZ56": {
+        "description": "Calc. Grain & Malt Avg Age & Recalc. G/M Proportn."
+      },
+      "BSRBSQ17": {
+        "description": "Selection of Data for Cask Analysis"
+      },
+      "BSRBTSTJ01": {
+        "description": "Overnight Reconciliation."
+      },
+      "BSUI01": {
+        "description": "Process NEWFILL/BARCODE, Dispaly User Interface"
+      },
+      "BSVMCL01": {
+        "description": "msg for job running - whse vacuity."
+      },
+      "BSVMCM04": {
+        "description": "CLP for whse. vacuity & blocked tiers reports."
+      },
+      "BSVMCM04A": {
+        "description": "Whse wacuity clp for reports."
+      },
+      "BSVMCM05": {
+        "description": "generate automatic warehouse map from stock"
+      },
+      "BSVMRM01": {
+        "description": "Maintain Whse. map file."
+      },
+      "BSVMRM02": {
+        "description": "Whse. Vacuity  Blocking Code/Descr. Maint"
+      },
+      "BSVMRM03": {
+        "description": "Likely usage of stock in tier update program."
+      },
+      "BSVMRM04": {
+        "description": "Vacuity report & blocked tiers report selection. R"
+      },
+      "BSVMRM05": {
+        "description": "generate automatic warehouse map from stock"
+      },
+      "BSVMRP01": {
+        "description": "Whse. vacuity report."
+      },
+      "BSVMRP02": {
+        "description": "Blocked tiers report."
+      },
+      "BSWSRC02": {
+        "description": "EDFSS integration - batch job"
+      },
+      "BSWSRC03": {
+        "description": "EDFSS integration - add triggers"
+      },
+      "BSWSRS07": {
+        "description": "EDFSS integration - send data to Azure Service Bus"
+      },
+      "BSWSRS08": {
+        "description": "EDFSS integration - update authorization string"
+      },
+      "CA02": {
+        "description": "Purchases - 3rd Parties"
+      },
+      "CA03": {
+        "description": "Exchanges"
+      },
+      "CA04": {
+        "description": "Non-I.W.D.D. Movement"
+      },
+      "CA05": {
+        "description": "Racked Casks"
+      },
+      "CA06": {
+        "description": "Lost Casks"
+      },
+      "CA13": {
+        "description": "Delete status 1 stock"
+      },
+      "CA17": {
+        "description": "Contract Detail Print"
+      },
+      "CA21": {
+        "description": "Standard deviation  process   (new program)"
+      },
+      "CA28": {
+        "description": "Sale of Stock"
+      },
+      "CA31": {
+        "description": "Customer Stock Transfer"
+      },
+      "CA33": {
+        "description": "Stock Deletions"
+      },
+      "CA39": {
+        "description": "Sale of stock at AYS date"
+      },
+      "CA61": {
+        "description": "Control BSRBRA61 - load 3rd party data purch/exchg"
+      },
+      "CA62": {
+        "description": "Control BSRBRA62 Purchase 3rd party status 1 stock"
+      },
+      "CA71": {
+        "description": "Tanker Losses Report (Selection & Submit) Program"
+      },
+      "CBRM01": {
+        "description": "Controlling program for record delivery receipt."
+      },
+      "CBRP06B": {
+        "description": "CLP for conf dates of recpt docs rtrnd for rec rpt"
+      },
+      "CC18": {
+        "description": "Allocate Blend No. to Scrolls"
+      },
+      "CC27": {
+        "description": "Order Forward"
+      },
+      "CD27": {
+        "description": "Order Forward"
+      },
+      "CGCBCL98": {
+        "description": "Date reversal / validation"
+      },
+      "CHG_CO_LOC": {
+        "description": "Change   Company & Location   in the LDA"
+      },
+      "CI02": {
+        "description": "Allocate Invoice Numbers"
+      },
+      "CI09": {
+        "description": "Annual Rent Invoices Print"
+      },
+      "CI44": {
+        "description": "Process NB Interfaced Removal Rent"
+      },
+      "CJ11": {
+        "description": "Stock Summary"
+      },
+      "CJ3017": {
+        "description": "Standard Reconciliation"
+      },
+      "CJ3018": {
+        "description": "Reconciliation by Whisky Group"
+      },
+      "CJ3021": {
+        "description": "Rent Reconciliation by Location"
+      },
+      "CLRMSGSF": {
+        "description": "Clear Message Subfile"
+      },
+      "CLRSFMSG": {
+        "description": "Clear messages from sub-file"
+      },
+      "CL01Y": {
+        "description": "Load Plan"
+      },
+      "CL01Z": {
+        "description": "Letters of Authorisation"
+      },
+      "CL40": {
+        "description": null
+      },
+      "CL41": {
+        "description": null
+      },
+      "CL60": {
+        "description": null
+      },
+      "CM73": {
+        "description": "Amend Calendar Period-end Dates"
+      },
+      "CO51": {
+        "description": "Shipment Schedule/Blend Make-up"
+      },
+      "CP67": {
+        "description": "Locations & Subsites"
+      },
+      "CP81": {
+        "description": "New Filling Sales - Prices Print"
+      },
+      "CQ01": {
+        "description": "Transaction History Print"
+      },
+      "CRCBCA25": {
+        "description": "SUBMIT BL/BO OPERATIONS REPORT"
+      },
+      "CRCBCL14": {
+        "description": "create printfile - for stock reconcile bulk stocks"
+      },
+      "CRCBRP15": {
+        "description": "write workfile for end of month stock reconcile"
+      },
+      "CRCBRP15A": {
+        "description": "selection sreen for stock reconcile"
+      },
+      "CRCBRP16": {
+        "description": "monthly cask stock report"
+      },
+      "CRCBRP26": {
+        "description": "Enter excise whs & date for Operations Report"
+      },
+      "CURLOCCRT": {
+        "description": "Creat Curloc datat area for Easy400 in Qtemp"
+      },
+      "CVTDATCU": {
+        "description": null
+      },
+      "CVTDATRP": {
+        "description": null
+      },
+      "CY31": {
+        "description": "Transaction History Enquiry"
+      },
+      "DSPMSGS": {
+        "description": "Display messages program"
+      },
+      "EG04": {
+        "description": "3RD PARTY PURCHASE OF STOCK ALREADY RECEIPTED."
+      },
+      "ENDCM": {
+        "description": "end commitment control"
+      },
+      "FIXCARMVD": {
+        "description": "Fix CARMVD which is set to zero"
+      },
+      "FIXDATWHS": {
+        "description": "Fix the date of warehousing"
+      },
+      "FIXORD160": {
+        "description": "Decant casks order 2017 0160"
+      },
+      "FIXORD79": {
+        "description": "Decant casks order 2017 0079"
+      },
+      "FNDLMSG": {
+        "description": "Find messages on Lansa msgf DC@M01"
+      },
+      "FNDMSG": {
+        "description": null
+      },
+      "FXBCIFPF02": {
+        "description": "Fix old records left on barcode file"
+      },
+      "GET_CO_NAM": {
+        "description": "Change Company & Location in the LDA"
+      },
+      "GTEGCL01": {
+        "description": "Print letters of authorisation by location"
+      },
+      "GTEGCL02": {
+        "description": "Print letters of authorisation at Speyside"
+      },
+      "GTEGCL03": {
+        "description": "Print letters of authorisation at default location"
+      },
+      "GTEGRP01": {
+        "description": "Sets output queues for letters of authorisation"
+      },
+      "GTGPCL01": {
+        "description": "To submit load plan report"
+      },
+      "GTGPCL02": {
+        "description": "Letters of authorisation"
+      },
+      "GTGPCL03": {
+        "description": "load transport store  computer generated run"
+      },
+      "GTGPCL04": {
+        "description": "Group Transport Manual LoadPlan Report Cl program."
+      },
+      "GTGPCL05": {
+        "description": "To submit load plan report"
+      },
+      "GTGPCL1A": {
+        "description": "To submit letters of authorisation"
+      },
+      "GTGPCL16": {
+        "description": "Move loads across years/months"
+      },
+      "GTGPRE01": {
+        "description": "load plan enquiry program"
+      },
+      "GTGPRE13": {
+        "description": "Load plan enquiry main program"
+      },
+      "GTGPRF01": {
+        "description": "to enter load plan report dates"
+      },
+      "GTGPRF02": {
+        "description": "Maintain Traffic book (Ad-hoc)"
+      },
+      "GTGPRF04": {
+        "description": "Pay Transport Invoices"
+      },
+      "GTGPRF10": {
+        "description": "Clear computer-calculated Load Plans"
+      },
+      "GTGPRF11": {
+        "description": "To enter load plan report dates - CBC400"
+      },
+      "GTGPRF12": {
+        "description": "Change status of Load Plans"
+      },
+      "GTGPRF13": {
+        "description": "To maintain manual load plan"
+      },
+      "GTGPRF15": {
+        "description": "Calculate costs"
+      },
+      "GTGPRF16": {
+        "description": "Move loads across years/months"
+      },
+      "GTGPRM02": {
+        "description": "Group transport constants maintenance"
+      },
+      "GTGPRN03": {
+        "description": "Monthly Freight Report"
+      },
+      "GTGPRP01": {
+        "description": "Load Plan report to run on CBC400"
+      },
+      "GTGPRP02": {
+        "description": "Group Transport Loadplan backup report by Location"
+      },
+      "GTGPRP03": {
+        "description": "Backup report by region date location"
+      },
+      "GTGPRP03A": {
+        "description": "Backup report by region date location(with LoadNo)"
+      },
+      "GTGPRP04": {
+        "description": "Load Plan Report - create workfile in entirety"
+      },
+      "GTGPRP04A": {
+        "description": "Print load plan report"
+      },
+      "GTGPRP05": {
+        "description": "Manual Loadplan Report"
+      },
+      "GTGPRP06": {
+        "description": "Manual Load Plan report"
+      },
+      "GTGPRP07": {
+        "description": "Manual Loadplan backup report by Locn"
+      },
+      "GTGPRP08": {
+        "description": "Manual Loadplan Backup report by region date locn"
+      },
+      "GTGPRP10": {
+        "description": "Calculate totals for Loadplan"
+      },
+      "GTGPRP12": {
+        "description": "Load Plan/Delivery/Stock enquiry"
+      },
+      "GTRBCL02": {
+        "description": "Group Transport Ad-Hoc LoadPlan Cl program."
+      },
+      "GTRBCL03": {
+        "description": "Group Transport Ad-Hoc LoadPlan Cl program."
+      },
+      "GTRBCN03": {
+        "description": "Group Transport Monthly Freight Report"
+      },
+      "GTRBPF02_1": {
+        "description": "Archive records in GTRBPF02"
+      },
+      "GTRBPF03_1": {
+        "description": "GTRBPF03 archive records"
+      },
+      "GTRBPF05_1": {
+        "description": "GTRBPF05 archive records"
+      },
+      "GTRBPF06_1": {
+        "description": "GTRBPF06 Archive Records"
+      },
+      "GTRBRC26": {
+        "description": "Del PW16 recs for stk lying GW for Macallan at MA."
+      },
+      "GTRBRC27": {
+        "description": "Load new allocations to GTRBPF03 from work file."
+      },
+      "GTRBRC28": {
+        "description": "Compare work files for load plan bottlings."
+      },
+      "GTRBRC29": {
+        "description": "Program to load new orders from PW16 to GTRBPF03"
+      },
+      "GTRBRC30": {
+        "description": "SEE QRPGLESRC Pgm to create wk files for bott ld"
+      },
+      "GTRBRF01": {
+        "description": "Enter letter of authorisation collection dates"
+      },
+      "GTRBRF02": {
+        "description": "To enter ad-hoc load plan"
+      },
+      "GTRBRF03": {
+        "description": "to calculate costs for ad-hoc load plan"
+      },
+      "GTRBRF04": {
+        "description": "Accept Transport Charge invoices"
+      },
+      "GTRBRF05": {
+        "description": "Load status enquiry/Maintenance"
+      },
+      "GTRBRN03": {
+        "description": "Group Transport - Monthly Freight Note."
+      },
+      "GTRBRP01": {
+        "description": "Letters of authorisation"
+      },
+      "GTRBRP07": {
+        "description": "Group Transport - Monthly Freight Note."
+      },
+      "LNKQY": {
+        "description": "Nominal Link Details Report"
+      },
+      "MOVETABLES": {
+        "description": "Move tables into retirement libraries"
+      },
+      "MP52": {
+        "description": "Call Vat Dip pgm BSCBRP52M Macallan"
+      },
+      "MSG01": {
+        "description": "Process BARCODE/NEWFILL, Display Message"
+      },
+      "NBIFARENT": {
+        "description": "NB ANNUAL RENTS INTERFACE (CA TRANSFER)"
+      },
+      "NBIFNFILL": {
+        "description": "NB NEW FILLINGS INTERFACE (CA TRANSFER)"
+      },
+      "NBIFRRENT": {
+        "description": "NB REMOVAL RENTS INTERFACE (CA TRANSFER)"
+      },
+      "NBIFSTKREC": {
+        "description": "NB STOCK REC. INTERFACE (CA TRANSFER)"
+      },
+      "NFEGCJ01": {
+        "description": "Exchange parameters and call SAP report"
+      },
+      "NFEG01": {
+        "description": "Process BARCODE/NEWFILL, Load data to BSS"
+      },
+      "NFEG02": {
+        "description": "Process NEWFILL, Data Log Enquiry"
+      },
+      "NFEG07": {
+        "description": "Process NEWFILL, Downdate NMS"
+      },
+      "NFEG05": {
+        "description": "Process NEWFILL, Process Filling Data"
+      },
+      "NFEG06R": {
+        "description": "Update BSCBTB01 - called from Lansa NFEG06"
+      },
+      "NF01": {
+        "description": "Process NEWFILL, Action Bar"
+      },
+      "NF03": {
+        "description": "Start Commitment Control"
+      },
+      "NF04": {
+        "description": "End Commitment Control"
+      },
+      "OAHANDLER": {
+        "description": "Open Access File Handler"
+      },
+      "OP120C": {
+        "description": "Blend Operation Invoice Enquiry"
+      },
+      "PA10": {
+        "description": "Send Load Plan To Highland"
+      },
+      "PF73FIX": {
+        "description": "A program populating BSRBPF73."
+      },
+      "PMPT001": {
+        "description": "Prompt Program - Location"
+      },
+      "PMPT002": {
+        "description": "Prompt Program - Cask Org/Yr/Rotn/From Cask"
+      },
+      "PMPT003": {
+        "description": "Prompt Program - Indication/Temperature"
+      },
+      "PMPT004": {
+        "description": "Prompt Program - Strength/Temperature"
+      },
+      "PMPT006": {
+        "description": "Prompt Program - Dip Value"
+      },
+      "PMPT007": {
+        "description": "Prompt for account codes"
+      },
+      "P108": {
+        "description": "Negative anker receipt"
+      },
+      "P109": {
+        "description": "Refill casks"
+      },
+      "RA07": {
+        "description": "Reserve & Dereserve Stock"
+      },
+      "RA09": {
+        "description": "Reserved Stock Print"
+      },
+      "RA10": {
+        "description": "I.W.D.D. Intention to Despatch  HD"
+      },
+      "RA11": {
+        "description": "Letter Of Authorisation"
+      },
+      "RA11X": {
+        "description": "NBD LOCATION UPDATE."
+      },
+      "RA13": {
+        "description": "Contract Maintenance"
+      },
+      "RA14": {
+        "description": "Contract Close"
+      },
+      "RA15": {
+        "description": "Contract Enquiry"
+      },
+      "RA16": {
+        "description": "Contract Header Print"
+      },
+      "RA17": {
+        "description": "Delete NBD new Fillings"
+      },
+      "RA18": {
+        "description": "Purchases - Group Companies"
+      },
+      "RA19": {
+        "description": "Contract Reactivate"
+      },
+      "RA26": {
+        "description": "I.W.D.D. Change                 HD"
+      },
+      "RA28": {
+        "description": "Sale of stock"
+      },
+      "RA29": {
+        "description": "Stock File Correction"
+      },
+      "RA29P": {
+        "description": "Stock correction - with Prefix parm to remove cpfx"
+      },
+      "RA29V": {
+        "description": "Vat correction calling BSRBRA29 with vat parm"
+      },
+      "RA30": {
+        "description": "Bulk Litres Correction"
+      },
+      "RA32": {
+        "description": "Litres of Alcohol Corrections"
+      },
+      "RA34": {
+        "description": "Stock Additions"
+      },
+      "RA35": {
+        "description": "Parcel Comments"
+      },
+      "RA37": {
+        "description": "Exchange - 3rd Party Litres Corr."
+      },
+      "RA57": {
+        "description": "Reservation Code Exchange"
+      },
+      "RA59": {
+        "description": "Load North British New Fillings"
+      },
+      "RA60": {
+        "description": "Purchase North British New Filling"
+      },
+      "RA92": {
+        "description": "R&B/CV Stock Transfer"
+      },
+      "RC01": {
+        "description": "Blending Programme Maintenance"
+      },
+      "RC02": {
+        "description": "Blending Programme Review (I.V.D.)"
+      },
+      "RC03": {
+        "description": "Print Monthly Schedule"
+      },
+      "RC05": {
+        "description": "Approve Schedule"
+      },
+      "RC07": {
+        "description": "Available Stock Enquiry"
+      },
+      "RC11": {
+        "description": "Update Stock Quality Parameters"
+      },
+      "RC16": {
+        "description": "Blending Programme Creation"
+      },
+      "RC16A": {
+        "description": "Racking Programme Creation"
+      },
+      "RC17": {
+        "description": "Add I.V.D. etc to Scroll"
+      },
+      "RC20": {
+        "description": "Macallan Sampling Requests ."
+      },
+      "RC21": {
+        "description": "Macallan Interim Scroll Report"
+      },
+      "RC22": {
+        "description": "Allocate Stock - Interactive"
+      },
+      "RC24": {
+        "description": "Blend Scroll Enquiry"
+      },
+      "RC25": {
+        "description": "Blend Make-up Check"
+      },
+      "RC40": {
+        "description": "Replacements"
+      },
+      "RC43": {
+        "description": "Replacements Enquiry"
+      },
+      "RC57": {
+        "description": "Order Forward Ratio Report"
+      },
+      "RC59": {
+        "description": "Stock by Order no. Report"
+      },
+      "RC71": {
+        "description": "Bottling Marks Requiring Samples"
+      },
+      "RD01": {
+        "description": "Set-up Operational Scroll"
+      },
+      "RD01BLBO": {
+        "description": "Create quick blend and then set back to BO"
+      },
+      "RD01RKBO": {
+        "description": "Create a racking then change LDA back to BO"
+      },
+      "RD02": {
+        "description": "Operational Scroll Maintenance"
+      },
+      "RD03": {
+        "description": "Operational Scroll Print"
+      },
+      "RD10": {
+        "description": "Purchase Order Maintenance"
+      },
+      "RD22": {
+        "description": "Allocate Stock - Interactive"
+      },
+      "RD24": {
+        "description": "Operational Scroll Enquiry"
+      },
+      "RD25": {
+        "description": "Macallan Sampling Requests & Labels"
+      },
+      "RD87": {
+        "description": "Operation Deallocation"
+      },
+      "RFIF12": {
+        "description": "Call BSIFRF12 TESS >TM1 Load Plan extract"
+      },
+      "RF03": {
+        "description": "Wood Summary print"
+      },
+      "RF07": {
+        "description": "Call bsifrp07 Cognos allocations"
+      },
+      "RF07DEBUG": {
+        "description": "Cognos allocations with debug"
+      },
+      "RF09": {
+        "description": "Cll BSIFRP09 mass de-allocation"
+      },
+      "RF10": {
+        "description": "TM1 to TESS load plan interface control"
+      },
+      "RF17": {
+        "description": "Flexible Recosting call selection and submit job"
+      },
+      "RF21": {
+        "description": "Insurance Valuation"
+      },
+      "RF24": {
+        "description": "Yearly Total Valuation Summary"
+      },
+      "RF25": {
+        "description": "Summary Valuation"
+      },
+      "RF25A": {
+        "description": "Yearly Total Valuation by Make"
+      },
+      "RF26": {
+        "description": "Detail Valuation"
+      },
+      "RF33": {
+        "description": "Detail Valuation (Unit Costs)"
+      },
+      "RF33X": {
+        "description": "Detail Val. - Blends - Unit Cost"
+      },
+      "RF35": {
+        "description": "Detail Valuation - Blend Only"
+      },
+      "RF37": {
+        "description": "Yearly Total by Make with Casks"
+      },
+      "RF38": {
+        "description": "Yearly Location Valuation -Summary"
+      },
+      "RF40": {
+        "description": "Detail Valuation Liabilities only"
+      },
+      "RF43": {
+        "description": "Summarised Stock Report - Blends"
+      },
+      "RG37": {
+        "description": "Allocate Rotation"
+      },
+      "RI01": {
+        "description": "Review Transactions for Invoicing"
+      },
+      "RI03": {
+        "description": "Review Invoices for Comments"
+      },
+      "RI04": {
+        "description": "Sales Invoices Print"
+      },
+      "RI05": {
+        "description": "Review Printed/Processed Invoices"
+      },
+      "RI06": {
+        "description": "Removal Rent Invoices Print"
+      },
+      "RI07": {
+        "description": "New Filling Invoices Print"
+      },
+      "RI08": {
+        "description": "Review Printed/Processed Rent Inv."
+      },
+      "RI21": {
+        "description": "Rent Payment (Group Invoices)"
+      },
+      "RI22": {
+        "description": "Review Paid Rents"
+      },
+      "RI23": {
+        "description": "Accept Removal Rents"
+      },
+      "RI24": {
+        "description": "Calculate Annual Rents"
+      },
+      "RI26": {
+        "description": "Accept Annual Rents"
+      },
+      "RI28": {
+        "description": "Outstanding Removal Rent List"
+      },
+      "RI30": {
+        "description": "Write-Off Removal Rents"
+      },
+      "RI32": {
+        "description": "Rent Processed Report"
+      },
+      "RI44": {
+        "description": "Process NBD Interface Annual rents"
+      },
+      "RI50": {
+        "description": "Rental Rate Comparison Report"
+      },
+      "RI53": {
+        "description": "Operational Sales Weekly Invoices"
+      },
+      "RJ01": {
+        "description": "Monthly Reconciliation (Close Pd.)"
+      },
+      "RJ01_AUTO": {
+        "description": "Automatic submission of period end"
+      },
+      "RMA8": {
+        "description": "Purchases to SunA/C Analysis Codes"
+      },
+      "RMD3": {
+        "description": "NBD Stock/Extra OFNotice parms"
+      },
+      "RME5": {
+        "description": "Call Warehousekeeper maintenance"
+      },
+      "RMU2": {
+        "description": "SAP Nominal Account Codes Maint"
+      },
+      "RMVALL": {
+        "description": "Error Message handling in CL - clear msgs out"
+      },
+      "RMV1": {
+        "description": "Blender''s Instructions for Scrolls"
+      },
+      "RM05": {
+        "description": "Financial Blend group"
+      },
+      "RM07": {
+        "description": "Location Code Sequencing"
+      },
+      "RM28": {
+        "description": "NB Loc''n Translation Maintenance"
+      },
+      "RM39": {
+        "description": "Order Forward Targets"
+      },
+      "RM41": {
+        "description": "Operational Sales - Prices"
+      },
+      "RM44": {
+        "description": "Group Sales - Prices"
+      },
+      "RM48": {
+        "description": "Carrier Codes/Rates maintenance"
+      },
+      "RM51": {
+        "description": "Shipment Schedule Instructions"
+      },
+      "RM52": {
+        "description": "Blend Make-up"
+      },
+      "RM52F": {
+        "description": "all BSRBRM52 with fast option"
+      },
+      "RM53": {
+        "description": "Contract Type"
+      },
+      "RM54": {
+        "description": "Blend Group"
+      },
+      "RM55": {
+        "description": "Distillery Group - Market Values"
+      },
+      "RM56": {
+        "description": "Distilleries"
+      },
+      "RM57": {
+        "description": "Wood Types"
+      },
+      "RM58": {
+        "description": "Cask Size"
+      },
+      "RM59": {
+        "description": "Owner/Originator"
+      },
+      "RM60": {
+        "description": "Accounts"
+      },
+      "RM61": {
+        "description": "Account/Ledger Codes"
+      },
+      "RM62": {
+        "description": "Price Codes/Account"
+      },
+      "RM63": {
+        "description": "Reservations"
+      },
+      "RM66": {
+        "description": "Invoice Terms"
+      },
+      "RM67": {
+        "description": "Locations & Rental Rates Maint."
+      },
+      "RM68": {
+        "description": "Loss Maintenance Parameters"
+      },
+      "RM69": {
+        "description": "Blend Warehouses"
+      },
+      "RM71": {
+        "description": "I.W.D.D. Transport Codes"
+      },
+      "RM72": {
+        "description": "Tariff Trade Code Numbers"
+      },
+      "RM76": {
+        "description": "Vat Types"
+      },
+      "RM80": {
+        "description": "COS for new filling"
+      },
+      "RM81": {
+        "description": "New Filling Sales - Prices"
+      },
+      "RM92": {
+        "description": "RB/CV Surplus/Deficit Maint."
+      },
+      "RM93": {
+        "description": "Constants"
+      },
+      "RM94": {
+        "description": "Reconciliation Headings"
+      },
+      "RM95": {
+        "description": "Trans Types/Recon. Headings"
+      },
+      "RM96": {
+        "description": "WBCL Error Message Maintenance"
+      },
+      "RM97": {
+        "description": "Transaction Types"
+      },
+      "RN01": {
+        "description": "Stock Enquiry"
+      },
+      "RN05": {
+        "description": "Financial blend group Enquiry"
+      },
+      "RN07": {
+        "description": "Location Code Sequencing Enquiry"
+      },
+      "RN28": {
+        "description": "NB Location Translation Enquiry"
+      },
+      "RN41": {
+        "description": "Oper. Sales - Agree/Prices Enquiry"
+      },
+      "RN44": {
+        "description": "Group Sales - Agree/Prices Enquiry"
+      },
+      "RN47": {
+        "description": "Location rental Rates Enquiry"
+      },
+      "RN48": {
+        "description": "Carrier Codes/Rates Enquiry"
+      },
+      "RN51": {
+        "description": "Shipment Schedule/Blend Make-up"
+      },
+      "RN53": {
+        "description": "Contract Type Enquiry"
+      },
+      "RN54": {
+        "description": "Blend Group Enquiry"
+      },
+      "RN55": {
+        "description": "Distillery Group - Market Values"
+      },
+      "RN56": {
+        "description": "Distilleries"
+      },
+      "RN57": {
+        "description": "Wood Types"
+      },
+      "RN58": {
+        "description": "Cask Size Enquiry"
+      },
+      "RN59": {
+        "description": "Owner/Originator Enquiry"
+      },
+      "RN60": {
+        "description": "Accounts"
+      },
+      "RN61": {
+        "description": "Account/Ledger Codes"
+      },
+      "RN62": {
+        "description": "Price Code/Account Enquiry"
+      },
+      "RN63": {
+        "description": "Reservations"
+      },
+      "RN64": {
+        "description": "Market Code Enquiry"
+      },
+      "RN66": {
+        "description": "Invoice Terms"
+      },
+      "RN67": {
+        "description": "Locations & Subsites"
+      },
+      "RN69": {
+        "description": "Blend Warehouses"
+      },
+      "RN71": {
+        "description": "I.W.D.D. Transport Codes"
+      },
+      "RN72": {
+        "description": "Tariff Trade Code Enquiry"
+      },
+      "RN73": {
+        "description": "Calendar Enquiry"
+      },
+      "RN75": {
+        "description": "Comments Enquiry"
+      },
+      "RN76": {
+        "description": "Vat Type Enquiry"
+      },
+      "RN80": {
+        "description": "H.D. Valuation - Prices Enquiry"
+      },
+      "RN81": {
+        "description": "New Filling Sales - Prices Enquiry"
+      },
+      "RN91": {
+        "description": "Next Available Number Enquiry"
+      },
+      "RN93": {
+        "description": "Constants Enquiry"
+      },
+      "RP02": {
+        "description": "Stockholding Report"
+      },
+      "RP04": {
+        "description": "Call BSIFRP04 production receipt rejects"
+      },
+      "RP05": {
+        "description": "Call disgorge program BSIFRP05"
+      },
+      "RP05BAK": {
+        "description": "Call disgorge program BSIFRP05"
+      },
+      "RP08": {
+        "description": "Stock Specification On Request"
+      },
+      "RP11": {
+        "description": "Vat stock enquiry"
+      },
+      "RP24": {
+        "description": "test program for month end information display#"
+      },
+      "RP25": {
+        "description": "Rent Payment Details Print"
+      },
+      "RP25A": {
+        "description": "Shipment schedule completion report"
+      },
+      "RP28": {
+        "description": "NB Location Translation Report"
+      },
+      "RP29": {
+        "description": "cl prg to run bscbrp29"
+      },
+      "RP37": {
+        "description": "Invoice Details print"
+      },
+      "RP40": {
+        "description": "Call Receive casks pgm BSCBRP40"
+      },
+      "RP43": {
+        "description": "call BSCBRP43"
+      },
+      "RP44": {
+        "description": "CALL BSCBRP44 CASK FILLING"
+      },
+      "RP44BAK": {
+        "description": "CALL BSCBRP44 CASK FILLING"
+      },
+      "RP45CL": {
+        "description": "calling black box program bscbrp45"
+      },
+      "RP48": {
+        "description": "Carrier Codes & Rates Print"
+      },
+      "RP51": {
+        "description": "rtsoutqCBRP51"
+      },
+      "RP52": {
+        "description": "Call Vat Dip pgm BSCBRP52"
+      },
+      "RP53": {
+        "description": "Contract Type Print"
+      },
+      "RP54": {
+        "description": "Blend Group Print"
+      },
+      "RP55": {
+        "description": "Distillery Group - Market Values"
+      },
+      "RP56": {
+        "description": "Distilleries"
+      },
+      "RP57": {
+        "description": "Wood Types"
+      },
+      "RP58": {
+        "description": "Cask Size Print"
+      },
+      "RP59": {
+        "description": "Owner/Originator Print"
+      },
+      "RP60": {
+        "description": "Accounts"
+      },
+      "RP61": {
+        "description": "Accounts/Ledger Codes"
+      },
+      "RP62": {
+        "description": "Price Code/Account Print"
+      },
+      "RP63": {
+        "description": "Reservations"
+      },
+      "RP71": {
+        "description": "I.W.D.D. Transport Codes"
+      },
+      "RP78CL": {
+        "description": "Flowlog - erroneous corrections & re-run CKFL"
+      },
+      "RP93": {
+        "description": "Constants Print"
+      },
+      "RP97": {
+        "description": "Transaction Types Print"
+      },
+      "RQ31": {
+        "description": "Stock Parcels Print"
+      },
+      "RQ51": {
+        "description": "HD Management Reports Selection"
+      },
+      "RQ69": {
+        "description": "Blend and Bottling Losses report"
+      },
+      "RQ69A": {
+        "description": "Blend & Bottling Avg Age reports"
+      },
+      "RQ69B": {
+        "description": "Blend Cost report"
+      },
+      "RQ69D": {
+        "description": "Bottling Losses Selection (New)"
+      },
+      "RQ69I": {
+        "description": "Blend and Bottling Losses report"
+      },
+      "RQ70R": {
+        "description": "Macallan bottling losses rpt (tanker/vat/bottle)."
+      },
+      "RQ80": {
+        "description": "Tank farm Cost report"
+      },
+      "RQ80A": {
+        "description": "Bottling cost report."
+      },
+      "RQ82": {
+        "description": "Note of Stock"
+      },
+      "RQ88": {
+        "description": "Cost of Sale Print"
+      },
+      "RQ90": {
+        "description": "Sale of Stock"
+      },
+      "RQ92": {
+        "description": "Cask Analysis"
+      },
+      "RQ96": {
+        "description": "Stock Operation Control"
+      },
+      "RQ98": {
+        "description": "New Fillings Within Period"
+      },
+      "RTV_ACGCDE": {
+        "description": "Retrieve Company & Location from ACGCDE"
+      },
+      "RTV_CO_LOC": {
+        "description": "Retrieve Company & Location from the LDA"
+      },
+      "RTVJOBSTS": {
+        "description": "Retrieve Job Status"
+      },
+      "RW33": {
+        "description": "Invoicing - Alternative Blend Mark"
+      },
+      "RW43": {
+        "description": "Call BSEGRW43 TESS>TM1 Load plan file maintenance"
+      },
+      "RX51": {
+        "description": "Amend Grouping of Blend Marks"
+      },
+      "RX56": {
+        "description": "Amend Grouping of Distilleries"
+      },
+      "R89A": {
+        "description": "Cost Sale Period Print"
+      },
+      "SAPCALL": {
+        "description": "Generic SAP Program Call 4.6C version"
+      },
+      "SAPCAL8": {
+        "description": "Generic SAP Program Call 8 chars in name 4.6C vers"
+      },
+      "SAPEVENT": {
+        "description": "SAPEVENT"
+      },
+      "SAVMESTOCK": {
+        "description": "Save Month End Stock files for DJ DSV & AC TM1"
+      },
+      "SET_CO_LOC": {
+        "description": "Set up   Company & Location   in the LDA"
+      },
+      "SET_CU_LOC": {
+        "description": "Set up   Company & Location   in the CURLOC LDA"
+      },
+      "SNDERRMSG": {
+        "description": "Error message handler"
+      },
+      "SNDMSG": {
+        "description": "Send program message"
+      },
+      "SNDSFMSG": {
+        "description": "Send messages from sub-file one substitution var"
+      },
+      "SNDSFMS2": {
+        "description": "Send message to subfile with 2 params"
+      },
+      "TESTSUE2": {
+        "description": "test"
+      },
+      "TMEGCL01": {
+        "description": "based on BSEGCL01"
+      },
+      "TMEGCL02": {
+        "description": "based on BSEGCL01"
+      },
+      "UPD_CSKLOC": {
+        "description": "Set CSKLOC data area when CSKLOCs detected"
+      },
+      "BCEG01": {
+        "description": "Process BARCODE, Load Data to BSS"
+      }
+    }
+  }
+}
