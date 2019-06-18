@@ -1,9 +1,11 @@
 <template>
-  <div class="container">
+  <b-container class="bv-example-row">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <sidebar-menu :menu="menu" @itemClick="onItemClick" />
 
     <b-row>
-      <b-col md="6" class="my-1">
+      <b-col>
         <b-form-group label-cols-sm="3" label="Choose type" class="mb-0">
           <b-dropdown :text="name">
             <b-dropdown-item v-for="type in types" :key="type" @click="name=type"> {{ type }} </b-dropdown-item>
@@ -12,7 +14,7 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col md="6" class="my-1">
+      <b-col>
         <b-form-group label-cols-sm="3" label="Filter" class="mb-0">
           <b-input-group>
             <b-form-input v-model="filter" placeholder="Type to Search"></b-form-input>
@@ -61,12 +63,11 @@
         </b-card>
       </template>
     </b-table>
-  </div>
+  </b-container>
 </template>
 
 <script>
 import setup from '../json/setup.json'
-import SideMenu from '../components/SideMenu.vue'
 
 export default {
   name: 'IBMiBuild',
@@ -78,7 +79,22 @@ export default {
       types: Object.keys(setup),
       number: [],
       currentPage: 1,
-      perPage: 10
+      perPage: 10,
+      menu: [
+        {
+          title: 'Modules',
+          value: 'modules',
+          visibleOnCollapse: true
+        },
+        {
+          title: 'Service Programs',
+          value: 'servicePrograms'
+        },
+        {
+          title: 'Programs',
+          value: 'programs'
+        }
+      ]
     }
   },
   mounted () {
@@ -107,10 +123,12 @@ export default {
     onFiltered (filteredItems) {
       this.currentPage = 1
       this.rows = filteredItems.length
+    },
+    onItemClick (event, item) {
+      this.name = item.value
     }
   },
   components: {
-    SideMenu
   }
 }
 </script>
