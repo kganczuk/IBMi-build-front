@@ -1557,13 +1557,6 @@
           "COMMIT": "*CHG"
         }
       },
-      "MARTUSIA": {
-        "description": "Kocham Martusie :)",
-        "parameters": {
-          "Jak?": "Bardzo mocno",
-          "Buzi?": "Tak"
-        }
-      },
       "SENDTOGUN": {
         "description": "Process BARCODE, Send to gun",
         "bindingDirectory": "TESSBNDDIR",
