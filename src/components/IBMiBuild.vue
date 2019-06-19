@@ -4,24 +4,18 @@
     
     <sidebar-menu :menu="menu" :collapsed=true theme="white-theme" @itemClick="onItemClick" />
 
-    <b-row>
-      <b-col>
+    
+      <b-col width="10px">
         <b-form-group label-cols-sm="3" label="Filter" class="mb-0">
           <b-input-group>
-            <b-form-input v-model="filter" placeholder="Type to Search"></b-form-input>
+            <b-form-input v-model="newFilter" @input="setFilter" placeholder="Type to Search"></b-form-input>
             <b-input-group-append>
-              <b-button :disabled="!filter" @click="filter=''">Clear</b-button>
+              <b-button :disabled="!newFilter" @click="newFilter=''">Clear</b-button>
             </b-input-group-append>
           </b-input-group>
         </b-form-group>
       </b-col>
-    </b-row>
-
-    <b-pagination
-      v-model="currentPage"
-      :total-rows="rows"
-      :per-page="perPage"
-      aria-controls="my-table" />
+    
 
     <b-table id="my-table" 
       hover
@@ -45,6 +39,14 @@
         </b-card>
       </template>
     </b-table>
+
+    <b-pagination
+      v-if="rows/perPage>1"
+      v-model="currentPage"
+      :total-rows="rows"
+      :per-page="perPage"
+      aria-controls="my-table" 
+      align="center"/>
   </b-container>
 </template>
 
@@ -58,6 +60,7 @@ export default {
       fields: ['program', 'description'], //, 'move'],
       name: 'servicePrograms',
       filter: null,
+      newFilter: null, 
       types: Object.keys(setup),
       number: [],
       currentPage: 1,
@@ -109,6 +112,11 @@ export default {
     },
     expandAdditionalInfo (row) {
       row._showDetails = !row._showDetails
+    },
+    setFilter () {
+      setTimeout(function () {
+        this.filter = this.newFilter
+      }.bind(this), 1000)
     }
   }
 }
@@ -116,4 +124,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+b-pagination {
+  margin: auto
+}
 </style>
