@@ -1,34 +1,34 @@
 <template>
-  <b-container class="bv-example-row">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <sidebar-menu :menu="menu" :collapsed=true theme="white-theme" @itemClick="onItemClick" />
+  <b-container>
+    <sidebar-menu ref="sidebar" :menu="menu" @itemClick="onItemClick" @click="collapseSidebar"/>
 
-    
-      <b-col width="10px">
-        <b-form-group label-cols-sm="3" label="Filter" class="mb-0">
-          <b-input-group>
-            <b-form-input v-model="newFilter" @input="setFilter" placeholder="Type to Search"></b-form-input>
-            <b-input-group-append>
-              <b-button :disabled="!newFilter" @click="newFilter=''">Clear</b-button>
-            </b-input-group-append>
-          </b-input-group>
-        </b-form-group>
-      </b-col>
+    <b-col class="filtering">
+      <b-input-group>
+        <b-form-input v-model="newFilter" @change="setFilter" @input="setFilter" placeholder="Type to Search"></b-form-input>
+        <b-input-group-append>
+          <b-button :disabled="!newFilter" @click="newFilter=''">Clear</b-button>
+        </b-input-group-append>
+      </b-input-group>
+    </b-col>
     
 
-    <b-table id="my-table" 
+    <b-table 
+      id="my-table" 
+      ref="myTable"
       hover
+      selectable
       responsive 
       flex 
       striped 
+      bordered
       :per-page="perPage"
       :current-page="currentPage"
       :items="objects" 
       :fields="fields" 
       :filter="filter"
       @filtered="onFiltered"
-      @row-clicked="expandAdditionalInfo">  
+      @row-clicked="expandAdditionalInfo"
+      :tbody-transition-props="transProps">  
 
       <template slot="row-details" slot-scope="row">
         <b-card>
@@ -61,24 +61,44 @@ export default {
       name: 'servicePrograms',
       filter: null,
       newFilter: null, 
-      types: Object.keys(setup),
       number: [],
       currentPage: 1,
-      perPage: 10,
+      perPage: 12,
       rows: 0,
-      clicked: 0,
+      transProps: {
+        // Transition name
+        name: 'flip-list'
+      },
       menu: [
         {
-          title: 'Modules',
-          value: 'modules'
-        },
-        {
-          title: 'Service Programs',
-          value: 'servicePrograms'
+          title: 'Files',
+          child: [
+            {
+              title: 'Printer Files',
+              value: 'printerFiles'
+            },
+            {
+              title: 'Display Files',
+              value: 'displayFiles'
+            }
+          ]
         },
         {
           title: 'Programs',
-          value: 'programs'
+          child: [
+            {
+              title: 'Modules',
+              value: 'modules'
+            },
+            {
+              title: 'Service Programs',
+              value: 'servicePrograms'
+            },
+            {
+              title: 'Programs',
+              value: 'programs'
+            }
+          ]
         }
       ]
     }
@@ -92,6 +112,14 @@ export default {
     }
   },
   methods: {
+    uncollapseSidebar () {
+      if (!this.$refs.sidebar.isCollapsed) {
+        this.$refs.sidebar.toggleCollapse()  
+      }
+    },
+    collapseSidebar () {
+      this.$refs.sidebar.toggleCollapse()
+    },
     table (list) {
       let output = []
       for (const key in list) {
@@ -108,16 +136,21 @@ export default {
       this.rows = filteredItems.length
     },
     onItemClick (event, item) {
-      this.name = item.value
+      if (item.value) {
+        this.name = item.value
+        this.rows = this.objects.length
+      }
     },
     expandAdditionalInfo (row) {
       row._showDetails = !row._showDetails
     },
     setFilter () {
-      setTimeout(function () {
-        this.filter = this.newFilter
-      }.bind(this), 1000)
+      setTimeout( () => {
+        this.filter = this.newFilter 
+      }, 500)
     }
+  },
+  components: {
   }
 }
 </script>
@@ -125,6 +158,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 b-pagination {
-  margin: auto
+  margin: auto;
 }
+.filtering {
+  max-width: 50%;
+  float: right;
+  padding: 50px
+}
+table#table-transition-example .flip-list-move {
+  transition: transform 1s;
+}
+
 </style>
